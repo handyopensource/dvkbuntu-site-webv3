@@ -332,7 +332,7 @@ ul.btn li:last-child {
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #bc1939;
+     color: #003a7c;
 }
 
 .navbar-expand-md .navbar-nav {
@@ -537,7 +537,7 @@ ul.btn li:last-child {
 
 .titlepage h2 {
      font-size: 40px;
-     color: #1d1b28;
+     color: #003a7c;
      line-height: 55px;
      font-weight: 800;
      padding: 0;
@@ -571,7 +571,7 @@ ul.btn li:last-child {
 }
 
 .read_more:hover {
-     background: #bc1939;
+     background: #003a7c;
      color: #fff;
      border-radius: 20px;
      transition: ease-in all 0.5s;
@@ -648,7 +648,7 @@ ul.btn li:last-child {
      background: #003a7c;
      background-size: 100% 100%;
      background-repeat: no-repeat;
-     height: 85vh;
+     height: 110vh;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -689,7 +689,7 @@ ul.btn li:last-child {
 }
 
 .customer .titlepage p {
-     color: #141629;
+     color: #003a7c;
      line-height: 28px;
      font-weight: 500;
      font-size: 17px;
@@ -707,7 +707,7 @@ ul.btn li:last-child {
 
 .customer_Carousel .test_box h4 {
      font-size: 24px;
-     color: #1d1b28;
+     color: #003a7c;
      line-height: 20px;
      display: block;
      text-align: center;
@@ -717,7 +717,7 @@ ul.btn li:last-child {
 }
 
 .customer_Carousel .test_box span {
-     color: #bc1939;
+     color: #003a7c;
      display: block;
      font-size: 17px;
      padding-bottom: 20px;
@@ -733,7 +733,7 @@ ul.btn li:last-child {
 .customer_Carousel .test_box p {
      font-size: 17px;
      line-height: 28px;
-     color: #1d1b28;
+     color: #003a7c;
      margin-bottom: 30px;
 }
 
@@ -744,13 +744,14 @@ ul.btn li:last-child {
 #myCarousel .carousel-control-next,
 #myCarousel .carousel-control-prev {
      opacity: 1;
+     color: carousel-control-prev#003a7c;
 }
 
 #myCarousel .carousel-control-next i,
 #myCarousel .carousel-control-prev i {
      width: 60px;
      height: 60px;
-     background: #bc1939;
+     background: #003a7c;
      opacity: 1;
      display: flex;
      align-items: center;
@@ -831,7 +832,7 @@ ul.btn li:last-child {
 .main_form .send_btn:hover {
      background-color: #fff;
      transition: ease-in all 0.5s;
-     color: #bc1939;
+     color: #003a7c;
 }
 
 #request *::placeholder {
@@ -949,11 +950,11 @@ ul.infometion li a {
 }
 
 ul.infometion li a:hover {
-     color: #a4152d;
+     color: #003a7c;
 }
 
 .copyright {
-     background: #a2152b;
+     background: #003a7c;
      margin-top: 70px;
      padding: 20px 0px;
 }

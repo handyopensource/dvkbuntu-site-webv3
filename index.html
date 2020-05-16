@@ -59,7 +59,7 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                 <a class="nav-link" href="https://www.forum.dvkbuntu.org/" target="_blank"><i class="fa fa-comments" aria-hidden="true" title="Forum HandyOpenSource"><div class="mypolice">&nbsp;&nbsp;Forum</div></i></a>
+                                 <a class="nav-link" href="http://discourse.home/" target="_blank"><i class="fa fa-comments" aria-hidden="true" title="Forum Discourse HandyOpenSource"><div class="mypolice">&nbsp;&nbsp;Forum</div></i></a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="https://facebook.com/HandyOpenSource" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" title="Facebook HandyOpenSource"><div class="mypolice">&nbsp;&nbsp;Facebook</div></i></a>
@@ -90,7 +90,6 @@
       <section class="bannertop">
          <div id="bannertop" >
            <div class="text-bg">
-              </br>
               <span0>Vous découvrez</span0>
               <h0>DVKBuntu</h0>
               <p>Soyez les bienvenues, DVKBuntu est une distribution linux, libre, ouverte et gratuite. Comme son slogan l'annonce : "L'informatique pour tous" , le but premier de DVKBuntu est de proposer un système d'exploitation adapté à tous, notamment au personne en situation de handicap. Et ceci avec des outils permettant l'accessibilité.  </p>
@@ -258,8 +257,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                    <a href="#service">
-                     <h2> Une Association </br><img src="images/handyopensource4.svg" alt="#"/></h2>
+                    <a href="#repere">
+                     <h2 id="repere"> Une Association </br><img src="images/handyopensource4.svg" alt="#"/></h2>
                     </a>
                   </div>
                </div>
@@ -267,7 +266,7 @@
             <div class="row">
                <div class="col-md-4">
                   <div id="hover_chang" class="service_box">
-                    <a href="#service">
+                    <a href="#repere">
                      <i><img src="images/association-loi-1901.png" alt="#"/></i>
                      <h3>Afin de nous organiser</h3>
                      <p>L'association a été fondée en septembre 2019, il s'agit est une association basé en France et qui repose sur la loi de 1901.</p>
@@ -276,7 +275,7 @@
                </div>
                <div class="col-md-4">
                   <div id="hover_chang" class="service_box">
-                    <a href="#customer">
+                    <a href="#myCarousel">
                      <i><img src="images/AutreContributeur.png" alt="#"/></i>
                      <h3>Une équipe</h3>
                      <p>L'équipe est ouverte sur le monde, même si la majorité des personnes faisant partie de l'association vivent en France et en Belgique.</p>
@@ -285,7 +284,7 @@
                </div>
                <div class="col-md-4">
                   <div id="hover_chang" class="service_box">
-                    <a href="#about">
+                    <a href="#repere2">
                      <i><img src="images/adherer.png" alt="#"/></i>
                      <h3>Pour nous rejoindre</h3>
                      <p>Il suffit d'adhérer à l'association, le montant de l'adhésion reste 100% libre, vous pouvez donner ce que vous voulez, y compris 0 €.</p>
@@ -302,7 +301,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Adhérer à l'association</h2>
+                     <h2 id="repere2">Adhérer à l'association</h2>
                      <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/handyopensource/adhesions/adhesion-a-handyopensource/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
                      <div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a>
                      </div>
@@ -498,7 +497,8 @@
           if( target.length ) {
               event.preventDefault();
               $('html, body').stop().animate({
-              }, 2000);
+                  scrollTop: target.offset().top - 80
+              }, 750);
           }
 
          });

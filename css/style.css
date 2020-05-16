@@ -228,7 +228,8 @@ button {
      width: 100%;
      float: left;
      margin: 0;
-     padding: 0;
+     padding-top: 5px;
+     padding-bottom: 5px;
 }
 
 
@@ -310,6 +311,7 @@ ul.btn li:last-child {
 
 .navigation.navbar {
      padding-top: 5px !important;
+     padding-bottom: 5px !important;
      padding: 0;
 }
 
@@ -320,6 +322,15 @@ ul.btn li:last-child {
      line-height: 42px;
      font-weight: 600;
      display: inline-block;
+}
+
+.texttoright {
+  float: right;
+}
+
+.mypolice {
+  font-family: 'Lato', sans-serif;
+  display: none;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
@@ -343,21 +354,6 @@ ul.btn li:last-child {
      padding-right: 10px;
 }
 
-.sign_btn {
-     padding-left: 10px;
-}
-
-.sign_btn a {
-     display: inline-block;
-     padding: 7px 10px;
-     color: #fff;
-     font-size: 17px;
-}
-
-.sign_btn a:hover {
-     color: #fff;
-}
-
 .header {
      width: 100%;
      padding: 5px 5px;
@@ -365,16 +361,19 @@ ul.btn li:last-child {
      background-size: 100% 100%;
      position: fixed;
      z-index: 999;
+     border-width: 0px 0px 2px 0px;
+     border-style: solid;
+     border-color: #222222;
 }
 
 .logo a {
-     font-size: 40px;
-     font-weight: bold;
-     text-transform: uppercase;
      color: #fff;
      line-height: 40px;
 }
 
+.logo a :hover {
+     background-color: #313131;
+}
 
 /** banner section **/
 
@@ -408,16 +407,17 @@ ul.btn li:last-child {
 
 .text-bg h0 {
      color: #000;
-     font-size: 96px;
-     line-height: 140px;
+     font-size: 52px;
+     line-height: 70px;
      padding-bottom: 35px;
+     font-style: bold;
      font-weight: bold;
 }
 
 .text-bg span0 {
      text-transform: uppercase;
      color: #000;
-     font-size: 52px;
+     font-size: 42px;
      line-height: 68px;
      font-weight: 700;
      display: block;
@@ -427,7 +427,7 @@ ul.btn li:last-child {
      color: #fff;
      font-size: 52px;
      font-style: italic;
-     line-height: 140px;
+     line-height: 70px;
      padding-top: 10px
      padding-bottom: 10px;
      font-weight: bold;
@@ -787,64 +787,13 @@ ul.btn li:last-child {
 .white {
      color: #fff;
 }
-
-.main_form .contactus {
-     padding: 0px 30px;
-     margin-bottom: 30px;
-     width: 100%;
-     height: 60px;
-     background: #fff;
-     color: #777977;
-     font-size: 17px;
-     font-weight: normal;
-     border-radius: 30px;
-     border: #ddd solid 1px;
+.source {
+  text-align: center;
 }
-
-.main_form .textarea {
-     padding: 0px 30px;
-     margin-bottom: 30px;
-     width: 100%;
-     background: #fff;
-     color: #777977;
-     font-size: 17px;
-     font-weight: normal;
-     border-radius: 30px;
-     border: #ddd solid 1px;
-     padding-top: 60px;
-     height: 160px;
+.source:hover {
+  background-color: #029;
+  border-radius: 20px;
 }
-
-.main_form .send_btn {
-     font-size: 17px;
-     transition: ease-in all 0.5s;
-     background-color: #000000;
-     text-transform: uppercase;
-     color: #fff;
-     padding: 13px 0px;
-     max-width: 190px;
-     width: 100%;
-     display: block;
-     margin-top: 10px;
-     border-radius: 30px;
-}
-
-.main_form .send_btn:hover {
-     background-color: #fff;
-     transition: ease-in all 0.5s;
-     color: #003a7c;
-}
-
-#request *::placeholder {
-     color: #777977;
-     opacity: 1;
-}
-
-#map {
-     height: 100%;
-     min-height: 432px;
-}
-
 
 /** end contact **/
 
@@ -853,7 +802,7 @@ ul.btn li:last-child {
 
 .footer {
      background: #191919;
-     padding-top: 85px;
+     padding-top: 20px;
      text-align: center;
 }
 
@@ -922,7 +871,7 @@ ul.btn li:last-child {
 }
 
 .heading3 {
-     text-align: left;
+     text-align: center;
 }
 
 .heading3 h3 {

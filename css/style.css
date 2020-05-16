@@ -774,7 +774,7 @@ ul.btn li:last-child {
 /** contact **/
 
 .contact {
-     background: url(../images/contact.jpg);
+     background: #003a7c;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding: 90px 0;

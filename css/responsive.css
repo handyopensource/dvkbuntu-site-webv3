@@ -2,13 +2,17 @@
 
 
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
-
+@media (min-width: 1343px) and (max-width: 2000px) {
+    .about {
+      height: 100%;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1342px) {
     .text-bg {
         padding-left: 37px;
     }
     .about {
-      height: 155vh;
+      height: 100%;
     }
     .text-bg h1 {
         font-size: 52px;
@@ -21,7 +25,7 @@
         font-size: 15px;
     }
     .about {
-      height: 155vh;
+      height: 100%;
     }
     ul.email li a {
         padding: 17px 7px 0 7px;
@@ -50,18 +54,19 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 0 18px;
+        padding: 0 4px;
+        font-size: 18px;
     }
     .mypolice {
       font-family: 'Lato', sans-serif;
-      display: inline-block;
+      display: none;
     }
     .banner_main {
         min-height: 513px;
         padding-top: 0px;
     }
     .about {
-      height: 155vh;
+      height: 100%;
     }
     .text-bg h1 {
         font-size: 52px;
@@ -115,7 +120,7 @@
      display: inline-block;
    }
    .about {
-     height: 155vh;
+     height: 100%;
    }
     .text-bg h1 {
         font-size: 52px;
@@ -234,7 +239,7 @@
         margin-bottom: 30px;
     }
     .about {
-      height: 155vh;
+      height: 100%;
     }
     .about .titlepage p {
         margin-top: 30px;

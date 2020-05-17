@@ -620,7 +620,9 @@ ul.btn li:last-child {
      background: #003a7c;
      background-size: 100% 100%;
      background-repeat: no-repeat;
-     height: 155vh;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     height: 100%;
      display: flex;
      align-items: center;
      justify-content: center;

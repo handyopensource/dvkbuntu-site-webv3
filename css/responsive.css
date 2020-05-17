@@ -7,6 +7,9 @@
     .text-bg {
         padding-left: 37px;
     }
+    .about {
+      height: 155vh;
+    }
     .text-bg h1 {
         font-size: 52px;
     }
@@ -16,6 +19,9 @@
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0px 7px;
         font-size: 15px;
+    }
+    .about {
+      height: 155vh;
     }
     ul.email li a {
         padding: 17px 7px 0 7px;
@@ -53,6 +59,9 @@
     .banner_main {
         min-height: 513px;
         padding-top: 0px;
+    }
+    .about {
+      height: 155vh;
     }
     .text-bg h1 {
         font-size: 52px;
@@ -104,6 +113,9 @@
    .mypolice {
      font-family: 'Lato', sans-serif;
      display: inline-block;
+   }
+   .about {
+     height: 155vh;
    }
     .text-bg h1 {
         font-size: 52px;

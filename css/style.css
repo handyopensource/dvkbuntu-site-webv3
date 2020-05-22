@@ -199,6 +199,7 @@ button {
 
 .full {
      float: left;
+     padding-left: 10px;
      width: 100%;
 }
 
@@ -228,7 +229,7 @@ button {
      width: 100%;
      float: left;
      margin: 0;
-     padding-top: 5px;
+     padding-top: 0px;
      padding-bottom: 5px;
 }
 
@@ -316,10 +317,10 @@ ul.btn li:last-child {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0 10px;
-     color: #7a7a7a;
-     font-size: 28px;
-     line-height: 42px;
+     padding: 0 8px;
+     color: #bebebe;
+     font-size: 20px;
+     line-height: 32px;
      font-weight: 600;
      display: inline-block;
 }
@@ -336,7 +337,7 @@ ul.btn li:last-child {
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #7a7a7a;
+     color: #ffffff;
      background-color: #313131;
 }
 
@@ -348,7 +349,13 @@ ul.btn li:last-child {
 }
 
 .navbar-expand-md .navbar-nav {
-     padding-right: 10px;
+     padding-right: 0px;
+}
+
+.dl {
+  align-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .padd_right {
@@ -357,7 +364,8 @@ ul.btn li:last-child {
 
 .header {
      width: 100%;
-     padding: 5px 5px;
+     height: 52px;
+     padding: 5px 40px;
      background: #003a7c;
      background-size: 100% 100%;
      position: fixed;
@@ -474,17 +482,23 @@ ul.btn li:last-child {
 
 #banner1 .carousel-control-prev {
      left: 0;
+     font-size: 24px;
+     width: 60px;
+     height: 60px;
 }
 
 #banner1 .carousel-control-next {
      right: inherit;
-     left: 5%;
+     left: 7%;
+     font-size: 24px;
+     width: 60px;
+     height: 60px;
 }
 
 #banner1 a.carousel-control-next,
 #banner1 a.carousel-control-prev {
      opacity: 1;
-     top: 100%;
+     top: 93%;
 }
 
 #banner1 .carousel-control-next i,

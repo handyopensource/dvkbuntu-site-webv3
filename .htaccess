@@ -23,3 +23,9 @@ php56 1
 
 
 Redirect permanent /# https://dvkbuntu.org/
+
+Redirect permanent /telecharger.php https://dvkbuntu.org/
+Redirect permanent /donnation.php https://dvkbuntu.org/
+Redirect permanent /connexion.php https://dvkbuntu.org/
+Redirect permanent /membre.php https://dvkbuntu.org/
+Redirect permanent /list_actu.php https://dvkbuntu.org/

@@ -51,8 +51,9 @@
         font-size: 16px;
     }
     .dlsf {
-      display: none;
-      padding-left: 10px;
+      display: inline;
+      height: 60%;
+      padding-left: 0px;
     }
 }
 
@@ -117,8 +118,9 @@
         margin-bottom: 20px;
     }
     .dlsf {
-      display: none;
-      padding-left: 10px;
+      display: inline;
+      height: 40%;
+      padding-left: 0px;
     }
 }
 

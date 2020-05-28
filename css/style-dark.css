@@ -401,7 +401,7 @@ ul.btn li:last-child {
 
 .banner_main {
      background: #222;
-     padding-top: 40px;
+     padding-top: 60px;
      padding-bottom: 40px;
      background-size: 100% 100%;
      display: flex;
@@ -833,5 +833,9 @@ ul.btn li:last-child {
      color: #555;
 }
 
+.PubsDefilante {
+     background-color: #020202cc;
+     color: #fff;
+}
 
 /** end footer **/

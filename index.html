@@ -567,7 +567,7 @@
                   <div class="col-md-12">
                      <div class="row">
                         <div class="col-md-12 padd_bottom">
-                           <div class="heading3">
+                           <div class="heading3" id="BasdePage">
                               <a href="#"><img src="images/logo.svg" alt="#"/></a>
                               <p>Soyez les bienvenues, DVKBuntu est une distribution linux basée sur Kubuntu, libre, ouverte et gratuite. Comme son slogan l'annonce : "L'informatique pour tous", le but premier de DVKBuntu est de proposer un système d'exploitation adapté à tous, notamment aux personnes en situation d'handicap, grâce à des outils permettant une meilleure accessibilité.</p>
                            </div>
@@ -743,11 +743,13 @@
             if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
                 var currentBannerTop = './bannertop1.html';
                 var currentCompteurs='./header1.html';
-                var currentPictures='./banner_main1.html'
+                var currentPictures='./banner_main1.html';
+                var currentBasdePage='./BasdePage1.html';
             }else{
                 var currentBannerTop = './bannertop0.html';
                 var currentCompteurs='./header0.html';
-                var currentPictures='./banner_main0.html'
+                var currentPictures='./banner_main0.html';
+                var currentBasdePage='./BasdePage0.html';
             }
             callURL(currentBannerTop,function(err,result){
                 //si la fonction renvoie une erreur alors on annule.
@@ -772,6 +774,14 @@
                 }
                 // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
                 document.getElementById("banner_main").innerHTML = result;
+            })
+            callURL(currentBasdePage,function(err,result){
+            //si la fonction renvoie une erreur alors on annule.
+                if (err){
+                    return;
+                }
+                // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+                document.getElementById("BasdePage").innerHTML = result;
             })
           }
       </script>

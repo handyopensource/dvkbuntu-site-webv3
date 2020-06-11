@@ -52,7 +52,7 @@
       </div>
       <!-- end loader -->
       <!-- header -->
-      <header>
+      <header id='mesHeaders'>
          <!-- header inner -->
          <div class="header">
             <div class="container">
@@ -61,12 +61,12 @@
                     <div class="full">
                        <div class="center-desk">
                           <div class="logo">
-                             <a href="#bannertop"><img src="images/logo.svg" alt="#" /></a>
+                             <a href="#" onclick="updateBannerTop()"><img src="images/logo.svg" alt="#" /></a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 dl">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 dl" id="Compteurs">
                              <a class="dlsf" id="linkToFollow" onClick="alertDiag('Si vous aimez notre projet, soutenez-nous dans la rubrique Donnation, merci !','#repere2');">
                                 <img alt="Download DVKBuntu" src="https://img.shields.io/sourceforge/dw/dvkbuntu?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB2aWV3Qm94PSIwIDAgMTQgMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPHBhdGggZD0iTTE0LjAwMSA3LjAwOGMuMDQzIDIuNzUzLTEuNzMyIDUuNDA4LTQuMjc1IDYuNDUtMi41IDEuMDgyLTUuNjAzLjUyNC03LjU1My0xLjM4M0MuMTk4IDEwLjI0LS41MjMgNy4yMTUuMzk5IDQuNjgyIDEuMjkxIDIuMDU2IDMuODY5LjEyMiA2LjY0Mi4wMTdjMi42OTYtLjE3NCA1LjM5IDEuMzkgNi41OTMgMy44MDUuNTA0Ljk4Ljc2NyAyLjA4Mi43NjYgMy4xODZ6IiBmaWxsPSIjMDA3OWMxIi8%2BPHBhdGggZD0iTTE0LjAwMSA3LjAwOGMuMDY0IDMuMTQ1LTIuMjkzIDYuMTI1LTUuMzYgNi44MS0yLjY4Mi42NTgtNS42OTktLjQyMy03LjMtMi42ODQtMS42ODYtMi4yODEtMS43OTYtNS41OTgtLjIwMy03Ljk1N0MyLjU5LjkzNSA1LjM3OC0uMzQ4IDguMDI0LjA3N2MyLjcyNC4zODcgNS4xMTMgMi41MDcgNS43NTkgNS4xOTEuMTQ1LjU2OC4yMTkgMS4xNTQuMjE4IDEuNzR6IiBmaWxsPSIjMGVhNWZmIiBmaWxsLW9wYWNpdHk9Ii45MzciLz48cGF0aCBkPSJNMy4zNjUgMi45MDZjLS40NDMuMjUtMS4xOS44MTEtLjU4NiAxLjMxNi4yMjkuNDcxLjc5NC45MDEuMzY0IDEuNDEtLjIzNi45MzgtMi4wNjIuMTA0LTEuNzk2IDEuMjk4LS4yMjQuOTA5Ljk0NS43MDYgMS41MDUuOTU2LjMwNi40MDIuNjUxIDEuMTczLjA2NSAxLjU5Ny0uNDEzLjQ0Ny0uNjQuOTU4IDAgMS4zMTEuNTQ2LjY4Ljk3OC0uNjEgMS40NDYtLjkwMi44NTctLjUyMi0uNTI2LTEuMDAzLS41MjUtMS42OC0uNTQzLTEuMzU1LS4wNTItMi45OTUgMS4wOTYtMy44NzgtLjUyMy0uNDc1LTEuMDQ2LS45NTEtMS41NjgtMS40Mjh6TTYuNjA4IDEuNDIzYy0uNzMyLjAyMi0xLjQxNC4yOC0uOTc3IDEuMDgyLjIzOS4zODctLjA0IDEuNTkyLjY3OSAxLjE5MSAxLjgxNy0uNDI3IDMuODEzLjk0NSA0LjAzIDIuODA3LjY1Mi0uMjU0IDEuNjktLjE0NyAyLjA5OC0uNjMyLS4xMDMtLjQ1OS0uMTI2LTEuMjEyLS43OTEtMS4wMDVoLTEuMTc0Yy0uNTU1LS41NS0uNDg5LTEuMjIzLS4xMDYtMS44Ny40MTgtLjU1NC0uNTctLjk1My0uOTMxLS45NzMtLjUxLjI4NC0uNzk4IDEuMjI2LTEuNDQyLjk3OC0uODkyLjEyNS0uOTUxLS44ODctMS4zMDgtMS40NDdsLS4wNzgtLjEzek0xMC4zMDcgNy43MzdjLS4zNTEgMS42NzUtMi4wOTcgMi45MDgtMy43OTUgMi42Mi0uNDQtLjA4Ny0uOTAzLS4zODctLjg2My4zMjMtLjA0Ny42MTktLjg4IDEuNzgxLjIyNCAxLjc3MS40NzEuMzQuNzA1LS4xNS44Ny0uNTFsLjQ3LS44NTRjLjc0OS0uMjI0IDEuMzA3LjE2IDEuNjkuODA1LjI4Ni42MzIgMS4xMDktLjA0IDEuMy0uMzQ3LS4wMDMtLjU4NS0uNjg5LTEuMjktLjE2Mi0xLjczNi4zMi0uODQzIDEuMjM0LS40MDQgMS44OTctLjQ1LjMwNS0uMDg3LjUzMi0uOTY1LjMyNy0xLjE3LS42NDUtLjE3NS0xLjMwNy0uMjk0LTEuOTU4LS40NTJ6IiBmaWxsPSIjZmZmIi8%2BPHNjcmlwdC8%2BPGVsbGlwc2UgY3g9IjYuODMiIGN5PSIzLjEzIiByeD0iLjg5OSIgcnk9Ii45MDMiIGZpbGw9Im5hdnkiIHN0cm9rZS13aWR0aD0iLjAzOSIvPjxwYXRoIGQ9Ik0xMS45MzIgNC4xMTZsLS4wMi40NzhMOC4zNiA1Ljg0djEuNzI0bDIuMDk4IDQuMzQxLS42MDMuMDItMi44MDMtMy44ODMtMi4zMjYgMy44NjNINC4yOWwxLjM3LTQuMTk2LjAyMS0xLjg5LTMuNTEtMS4yMjV2LS40NTdsNC42NzMuNTR6IiBmaWxsPSJuYXZ5IiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iLjA0MiIvPjwvc3ZnPg%3D%3D&label=Téléchargement%20DVKBuntu%20&style=for-the-badge" width="45%" style="cursor: pointer;"/>
                              </a>&nbsp;&nbsp;
@@ -89,7 +89,7 @@
                                 }
                                </style>
                                <div class="yellow">
-                                <a class="nav-link" id="replaceonclicktest" href="#">
+                                <a class="nav-link" onclick="changementdestyle()" href="#">
                                   <div class="yellow">
                                       <i class="fa fa-low-vision" aria-hidden="true" title="Mode Malvoyant">
                                         <div class="mypolice">&nbsp;&nbsp;Mode Malvoyant</div>
@@ -155,12 +155,12 @@
          <div id="bannertop" >
            <div class="text-bg">
               <span0>Vous découvrez</span0>
-              <h0>DVKBuntu</h0>
+              <h0 id='Titre DVKVersion'>DVKBuntu</h0>
               <p>Soyez les bienvenues, DVKBuntu est une distribution linux basée sur Kubuntu, libre, ouverte et gratuite. Comme son slogan l'annonce : "L'informatique pour tous", le but premier de DVKBuntu est de proposer un système d'exploitation adapté à tous, notamment aux personnes en situation d'handicap, grâce à des outils permettant une meilleure accessibilité.</p>
            </div>
          </div>
       </section>
-      <section class="banner_main">
+      <section class="banner_main" id="banner_main">
          <div id="banner1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#banner1" data-slide-to="0" class="active"></li>
@@ -172,25 +172,25 @@
                <li data-target="#banner1" data-slide-to="6"></li>
             </ol>
             <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container-fluid">
-                     <div class="carousel-caption">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="text-bg">
-                                 <h1>DVKBuntu</h1>
-                                 <span>en images</span>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="text_img">
-                                 <figure><img src="images/slide/img1.jpg" alt="#"/></figure>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+              <div class="carousel-item active">
+                 <div class="container-fluid">
+                    <div class="carousel-caption">
+                       <div class="row">
+                         <div class="col-md-6">
+                            <div class="text-bg">
+                               <h1>DVKBuntu</h1>
+                               <span>en images</span>
+                            </div>
+                         </div>
+                          <div class="col-md-6">
+                             <div class="text_img">
+                                <figure><img src="images/slide/img1.jpg" alt="#"/></figure>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
                <div class="carousel-item">
                   <div class="container-fluid">
                      <div class="carousel-caption">
@@ -306,10 +306,10 @@
                   </div>
                </div>
             </div>
-            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#banner1" role="button" onclick="changePosition('#banner1')" data-slide="prev">
             <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
             </a>
-            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#banner1" role="button" onclick="changePosition('#banner1')" data-slide="next">
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
          </div>
@@ -343,7 +343,7 @@
                      <i><img src="images/AutreContributeur.png" alt="#"/></i>
                      <h3>Une équipe</h3>
                      <p>L'équipe est ouverte sur le monde, même si la majorité des personnes faisant partie de l'association vivent en France et en Belgique.</p>
-                   </a>
+                   </a>console.log(document.getElementById('Titre DVKVersion').innerText);
                   </div>
                </div>
                <div class="col-md-4">
@@ -415,7 +415,8 @@
                               <h4>Paul WOISARD</h4>
                               <span>Co-Iniatiateur du Projet et Développeur du Projet</span>
                               <p>Fan d'informatique, il a beaucoup travaillé pour nous proposer une interface visuelle et des outils adaptés. Il gère les mises à jour du projet. Il est très impliqué dans le projet.</p>
-                              <img src="images/icon.png" alt="#"/>
+                  Messages
+            <img src="images/icon.png" alt="#"/>
                            </div>
                         </div>
                      </div>
@@ -637,7 +638,6 @@
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/styleswitcher.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
@@ -654,6 +654,17 @@
           }
 
          });
+      </script>
+      <script>
+          function changePosition(myhref) {
+              var target = $(myhref);
+              if(target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 80
+                }, 750);
+              }
+            }
       </script>
       <script>
           function alertDiag(texte, myhref) {
@@ -673,6 +684,96 @@
                 document.getElementById("linkToFollow").removeAttribute('href');
               }
             }
+      </script>
+      <script>
+        function changementdestyle() {
+
+          console.log("clicked");
+          //var ghLink = document.getElementsById("Github2Dark");
+          //var lpLink = document.getElementsById("Launchpad2Dark");
+
+          var baliseLink = document.getElementById("linkcss");
+          var etat = baliseLink.href.endsWith("css/style.css");
+
+          if (etat) {
+              baliseLink.setAttribute("href", "css/style-dark.css");
+              document.getElementById("Github2Dark").src = "images/OpenSource/Github-dark.png";
+              document.getElementById("Launchpad2Dark").src = "images/OpenSource/Launchpad-dark.png";
+          } else {
+              baliseLink.setAttribute("href", "css/style.css");
+              document.getElementById("Github2Dark").src = "images/OpenSource/Github.png";
+              document.getElementById("Launchpad2Dark").src = "images/OpenSource/Launchpad.png";
+          }
+        }
+      </script>
+      <script>
+        /**
+        * Cette Fonction permet de recuperer le contenu d'une page avec l'aide d'une requête XHR (XmlHttpRequest)
+        * XHR : https://developer.mozilla.org/fr/docs/Web/API/XMLHttpRequest
+        *
+        * Attention cette requête est asynchrone c'est pourquoi elle utilise des callback
+        * CallBack : https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+        */
+        function callURL(url,callback){
+            // on crée l'objet xhr
+            var xhr = new XMLHttpRequest();
+            //On définie une évenement sur le changement d'état de la requête.
+            xhr.onreadystatechange = function() {
+                //on vérifie si le code renvoyé par la page est le code 4 c'est a dire DONE, donc que la requête est terminé.
+                if (xhr.readyState === 4) {
+                    //on enregistre le résultat de la requête (le code de la page demandé).
+                    var result = xhr.response;
+                    //on regarde si le résultat est vide ?
+                    if(result){
+                        //si il y a un résultat on renvoie le resulat.
+                        callback(null,result);
+                    }else{
+                        //si il n'y a pas de résultat on renvoie une information d'erreur
+                        callback("error",null);
+                    }
+                }
+            }
+            //on ouvre le requête en méthode GET.
+            xhr.open('GET', url, true);
+            //on envoie la requête.
+            xhr.send('');
+        }
+        function updateBannerTop(){
+            console.log(document.getElementById('Titre DVKVersion').innerText);
+            if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
+                var currentBannerTop = './bannertop1.html';
+                var currentCompteurs='./header1.html';
+                var currentPictures='./banner_main1.html'
+            }else{
+                var currentBannerTop = './bannertop0.html';
+                var currentCompteurs='./header0.html';
+                var currentPictures='./banner_main0.html'
+            }
+            callURL(currentBannerTop,function(err,result){
+                //si la fonction renvoie une erreur alors on annule.
+                if (err){
+                    return;
+                }
+                // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+                document.getElementById("bannertop").innerHTML = result;
+            })
+            callURL(currentCompteurs,function(err,result){
+            //si la fonction renvoie une erreur alors on annule.
+                if (err){
+                    return;
+                }
+                // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+                document.getElementById("mesHeaders").innerHTML = result;
+            })
+            callURL(currentPictures,function(err,result){
+            //si la fonction renvoie une erreur alors on annule.
+                if (err){
+                    return;
+                }
+                // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+                document.getElementById("banner_main").innerHTML = result;
+            })
+          }
       </script>
    </body>
 </html>

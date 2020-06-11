@@ -31,3 +31,4 @@ Redirect permanent /membre.php https://dvkbuntu.org/
 Redirect permanent /list_actu.php https://dvkbuntu.org/
 Redirect permanent /open-source.php https://dvkbuntu.org/
 Redirect permanent /docs/exemple_RI_final.pdf https://dvkbuntu.org/pdfAdmin/RI_final.pdf
+Redirect permanent /docs/statuts_handyopensource_final.pdf https://dvkbuntu.org/pdfAdmin/statuts_hos.pdf

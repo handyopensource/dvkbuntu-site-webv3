@@ -1,13 +1,14 @@
 var buttonChangeStyle = document.getElementById("replaceonclicktest");
 buttonChangeStyle.onclick = function changementdestyle() {
 
+    console.log("clicked");
     //var ghLink = document.getElementsById("Github2Dark");
     //var lpLink = document.getElementsById("Launchpad2Dark");
 
     var baliseLink = document.getElementById("linkcss");
     var etat = baliseLink.href.endsWith("css/style.css");
 
-    if (etat == true) {
+    if (etat) {
         baliseLink.setAttribute("href", "css/style-dark.css");
         document.getElementById("Github2Dark").src = "images/OpenSource/Github-dark.png";
         document.getElementById("Launchpad2Dark").src = "images/OpenSource/Launchpad-dark.png";

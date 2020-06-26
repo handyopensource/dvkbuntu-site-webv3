@@ -562,6 +562,23 @@ ul.btn li:last-child {
      padding-bottom: 20px;
 }
 
+.mentionslegales {
+margin: auto;
+text-align: justify;
+text-justify: inter-word;
+width: 800px;
+}
+
+.titlepage h50 {
+     font-size: 28px;
+     font-weight: 800;
+     color: #003a7c;
+     margin: auto;
+     text-align: justify;
+     text-justify: inter-word;
+     max-width: 800px;
+}
+
 .d_flex {
      display: flex;
      align-items: center;
@@ -785,7 +802,12 @@ ul.btn li:last-child {
 .footer {
      background: #191919;
      padding-top: 20px;
-     text-align: center;
+     text-align: center;mentionslegales {
+margin: auto;
+text-align: justify;
+text-justify: inter-word;
+width: 1000px;
+}
 }
 
 .heading3 {

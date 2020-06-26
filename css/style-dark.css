@@ -563,6 +563,20 @@ ul.btn li:last-child {
      padding-bottom: 20px;
 }
 
+.mentionslegales {
+margin: auto;
+text-align: justify;
+text-justify: inter-word;
+width: 800px;
+}
+
+h50 {
+  margin: auto;
+  text-align: justify;
+  width: 800px;
+  color: #212121;
+}
+
 .d_flex {
      display: flex;
      align-items: center;

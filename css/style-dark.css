@@ -570,11 +570,14 @@ text-justify: inter-word;
 width: 800px;
 }
 
-h50 {
+.titlepage h50 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #212121;
   margin: auto;
   text-align: justify;
-  width: 800px;
-  color: #212121;
+  text-justify: inter-word;
+  max-width: 800px;
 }
 
 .d_flex {

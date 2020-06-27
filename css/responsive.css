@@ -6,6 +6,9 @@
     .about {
       height: 100%;
     }
+    .mentionslegales {
+      width: 100%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1342px) {
     .text-bg {
@@ -16,6 +19,9 @@
     }
     .text-bg h1 {
         font-size: 52px;
+    }
+    .mentionslegales {
+      width: 100%;
     }
 }
 
@@ -54,6 +60,9 @@
       display: inline;
       height: 60%;
       padding-left: 0px;
+    }
+    .mentionslegales {
+      width: 100%;
     }
 }
 
@@ -121,6 +130,9 @@
       display: inline;
       height: 40%;
       padding-left: 0px;
+    }
+    .mentionslegales {
+      width: 100%;
     }
 }
 
@@ -207,7 +219,9 @@
       display: none;
       padding-left: 10px;
     }
-
+    .mentionslegales {
+      width: 100%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -316,5 +330,8 @@
     }
     ul.email li {
         display: none;
+    }
+    .mentionslegales {
+      width: 100%;
     }
 }

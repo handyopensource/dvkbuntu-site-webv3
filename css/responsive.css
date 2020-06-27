@@ -6,9 +6,6 @@
     .about {
       height: 100%;
     }
-    .mentionslegales {
-      width: 100%;
-    }
 }
 @media (min-width: 1200px) and (max-width: 1342px) {
     .text-bg {
@@ -19,9 +16,6 @@
     }
     .text-bg h1 {
         font-size: 52px;
-    }
-    .mentionslegales {
-      width: 100%;
     }
 }
 
@@ -60,9 +54,6 @@
       display: inline;
       height: 60%;
       padding-left: 0px;
-    }
-    .mentionslegales {
-      width: 100%;
     }
 }
 
@@ -131,9 +122,15 @@
       height: 40%;
       padding-left: 0px;
     }
-    .mentionslegales {
-      width: 100%;
+    .heading3 .mybackground {
+      height: 15%;
     }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .mentionslegales {
+    width: 100%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -216,11 +213,16 @@
         background-repeat: no-repeat;
     }
     .dlsf {
-      display: none;
+      display: none;    .heading3 .mybackground {
+      height: 10%;
+    }
       padding-left: 10px;
     }
     .mentionslegales {
       width: 100%;
+    }
+    .heading3 .mybackground {
+      height: 9%;
     }
 }
 
@@ -259,7 +261,7 @@
         margin-bottom: 20px;
     }
     .text-bg a {
-        max-width: 132px;
+        max-width: 132px;0
         padding: 10px 0px;
     }
     .titlepage h2 {
@@ -292,7 +294,9 @@
     .navigation.navbar {
         display: inherit !important;
         padding: 0 !important;
-        width: 100%;
+        width: 100%;    .heading3 .mybackground {
+      height: 10%;
+    }
         margin-top: -42px;
     }
     .navigation .navbar-collapse {
@@ -333,5 +337,8 @@
     }
     .mentionslegales {
       width: 100%;
+    }
+    .heading3 .mybackground {
+      height: 7%;
     }
 }

@@ -574,6 +574,7 @@ text-justify: inter-word;
 background: #000;
 color: #fff;
 width: 800px;
+font-size: 25px;
 }
 .mentionslegales a {
   color: #00f;
@@ -582,13 +583,15 @@ width: 800px;
 .titlepage h50 {
   font-size: 28px;
   font-weight: 800;
-  color: #212121;
+  color: #ffff55;
   margin: auto;
   text-align: justify;
   text-justify: inter-word;
   max-width: 800px;
 }
-
+.titlepage h3 {
+  color: #ffff55;
+}
 .d_flex {
      display: flex;
      align-items: center;

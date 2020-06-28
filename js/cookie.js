@@ -8,7 +8,7 @@ function setCookie(cname, exdays) {
   var expires = "expires="+d.toUTCString();
   var cvalue = getCookie(cname);
   if (cvalue == "" || cvalue == null) {
-    cvalue = 0;   
+    cvalue = 0;
   }
   console.log(cvalue);
   if (cvalue == 1) {

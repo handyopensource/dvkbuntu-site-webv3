@@ -10,5 +10,6 @@ Disallow: /fonts/
 Disallow: /js/
 Allow: /images/
 Allow: /pdfAdmin/
+Allow: /downloads/
 
 Sitemap: https://www.dvkbuntu.org/sitemap.xml

@@ -1,1 +1,2 @@
-/download/*
+/downloads/*
+!/downloads/index.html

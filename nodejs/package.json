@@ -1,0 +1,21 @@
+{
+  "name": "listefichiers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.20.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Paul WOISARD",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7",
+    "fs": "^0.0.1-security",
+    "directory-tree": "^2.2.4"
+  }
+}

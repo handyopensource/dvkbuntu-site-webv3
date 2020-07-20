@@ -12,6 +12,6 @@ app.get('/', function (req, res) {
     if(err) return res.send(err)
     res.send('ok')
   });
-})
+});
 
-app.listen(3000)
+app.listen(process.env.PORT);

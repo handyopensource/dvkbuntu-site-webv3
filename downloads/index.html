@@ -54,7 +54,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout" onload="checkCookie()">
+   <body class="main-layout" onload="checkCookie(); reloadFileList();">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="../images/loading.gif" alt="#" /></div>
@@ -275,5 +275,14 @@
       <script src="../js/invisible.js"></script>
       <script src="../js/callbackxhr.js"></script>
       <script src="../js/cookie.js"></script>
+      <script>
+        function fermer_popup() {
+          window.close('MyPopupWindow');
+        }
+        function reloadFileList() {
+          window.open('https://www.dvkbuntu.org/nodejs','MyPopupWindow','height=270,width=270,top=50,left=50,resizable=no,menubar=no,status=no,scrollbars=no,menubar=no');
+          window.setTimeout(fermer_popup, 1000); // 1000 = 1 seconde
+        }
+      </script>
    </body>
 </html>

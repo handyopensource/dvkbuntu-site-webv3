@@ -17,7 +17,7 @@ app.get('/nodejs', function (req, res) {
   fs.writeFile('listefichiers.json', JSON.stringify(filteredTree), function(err) {
     if(err) return res.send(err);
     res.send('ok');
-    res.end(history.back(););
+    history.back();
   });
 });
 

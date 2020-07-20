@@ -10,7 +10,7 @@ const fs = require('fs');
 const dirTree = require("directory-tree");
 
 
-app.get('/', function (req, res) {
+app.get('/nodejs', function (req, res) {
   const directoryPath = path.join(__dirname, '../downloads');
   const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js/ });
 

@@ -10,10 +10,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^latest",
     "path": "^0.12.7",
     "fs": "^0.0.1-security",
-    "directory-tree": "^2.2.4"
+    "directory-tree": "^latest"
   },
   "engines": {
     "node": "10.20.1"

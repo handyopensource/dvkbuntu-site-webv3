@@ -15,8 +15,9 @@ app.get('/nodejs', function (req, res) {
   const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js/ });
 
   fs.writeFile('listefichiers.json', JSON.stringify(filteredTree), function(err) {
-    if(err) return res.send(err)
-    res.send('ok')
+    if(err) return res.send(err);
+    res.send('ok');
+    window.close();
   });
 });
 

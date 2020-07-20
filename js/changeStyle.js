@@ -2,7 +2,7 @@ function changementdestyle() {
 
   //var ghLink = document.getElementsById("Github2Dark");
   //var lpLink = document.getElementsById("Launchpad2Dark");
-
+  document.getElementById('myiFrame').style.display='none';
   var baliseLink = document.getElementById("linkcss");
   var etat = baliseLink.href.endsWith("css/style.css");
   var imageExist = document.getElementById("Github2Dark");

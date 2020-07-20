@@ -12,12 +12,11 @@ const dirTree = require("directory-tree");
 
 app.get('/nodejs', function (req, res) {
   const directoryPath = path.join(__dirname, '../downloads');
-  const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js/ });
+  const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js|style-dark.css|style.css/ });
 
   fs.writeFile('listefichiers.json', JSON.stringify(filteredTree), function(err) {
     if(err) return res.send(err);
     res.send('ok');
-    history.back();
   });
 });
 

@@ -1,8 +1,14 @@
+if (typeof(PhusionPassenger) !== 'undefined') {
+    PhusionPassenger.configure({ autoInstall: false });
+}
+
 const express = require('express');
+const app = express();
+
 const path = require('path');
 const fs = require('fs');
 const dirTree = require("directory-tree");
-const app = express();
+
 
 app.get('/', function (req, res) {
   const directoryPath = path.join(__dirname, '../downloads');
@@ -14,4 +20,8 @@ app.get('/', function (req, res) {
   });
 });
 
-app.listen(process.env.PORT);
+if (typeof(PhusionPassenger) !== 'undefined') {
+    app.listen('passenger');
+} else {
+    app.listen(3000);
+}

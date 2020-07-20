@@ -70,7 +70,7 @@
                     <div class="full">
                        <div class="center-desk">
                           <div class="logo">
-                             <a href="#" onClick="setCookie('Light', 90); updateBannerTop();"><img src="../images/logo-v2.svg" alt="#" /></a>
+                             <a href="#" onClick="location.href = 'https://www.dvkbuntu.org/';"><img src="../images/logo-v2.svg" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -276,12 +276,12 @@
       <script src="../js/callbackxhr.js"></script>
       <script src="../js/cookie.js"></script>
       <script>
-        function fermer_popup() {
-          window.close('MyPopupWindow');
+        function fermer_popup(url) {
+          window.close(url);
         }
         function reloadFileList() {
           window.open('https://www.dvkbuntu.org/nodejs','MyPopupWindow','height=270,width=270,top=50,left=50,resizable=no,menubar=no,status=no,scrollbars=no,menubar=no');
-          window.setTimeout(fermer_popup, 1000); // 1000 = 1 seconde
+          window.setTimeout(fermer_popup('MyPopupWindow'), 1); // 1000 = 1 seconde
         }
       </script>
    </body>

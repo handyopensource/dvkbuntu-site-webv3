@@ -173,63 +173,10 @@
       <!-- LienDL -->
       <iframe src="https://www.dvkbuntu.org/nodejs" id="myiFrame">
       </iframe>
-      <div  id="bannertop">
-        <h1>JSON</h1>
-        <div id="resultat">
+      <div  id="bannertop" class="tableau">
+        <div class="text-bg">
+          <p id="demo"></p>
         </div>
-        <style>
-          td, th  {min-width:80px;border:inset 2px silver;;text-align:center}
-          height: 1000px;
-        </style>
-        <div id="c"></div>
-        <script>
-          window.addEventListener("load",()=>{
-            function eleve (nom, prénom, age, note1, note2, note3, note4){
-              this.nom    = nom;
-              this.prenon = prénom;
-              this.age    = age;
-              this.notes  = [note1, note2, note3, note4]
-            }
-
-            const unTableauEtudiant = [
-              new eleve('a', 'aa', 18, 12, 13, 10, 15),
-              new eleve('b', 'bb', 19, 14, 12, 14, 12),
-              new eleve('c', 'cc', 17, 13, 19, 10, 8),
-              new eleve('d', 'dd', 20, 15, 10, 15, 9),
-              new eleve('e', 'ee', 21, 16, 13, 18, 10),
-            ];
-
-            const t=document.createElement("table");
-            const tb=document.createElement("tbody");
-            const thead=document.createElement("thead");
-            thead.style.background="grey";
-            t.appendChild(thead);
-            t.appendChild(tb)
-            document.getElementById("c").appendChild(t);
-
-            unTableauEtudiant.forEach((v,i)=>{
-              let tr=document.createElement("tr");
-              if(i%2==1){
-                tr.style.background="orange"
-              }
-              if(i==0){
-                for(prop in v){
-                  let th=document.createElement("th");
-                  thead.appendChild(tr);
-                  tr.appendChild(th);
-                  th.textContent=prop;
-                }
-              }
-              else{
-                for(prop in v){
-                  let td=document.createElement("td");
-                  tb.appendChild(tr);
-                  tr.appendChild(td);
-                  td.textContent=v[prop];
-                }
-              }
-            });
-        </script>
       </div>
       <!-- end LienDL -->
       <!--  footer -->
@@ -336,12 +283,24 @@
       <script src="../js/cookie.js"></script>
       <script>
         //Objet JavaScript
-        let fichiers = ../nodejs/listefichiers.json;
-
-        //Conversion en chaine JSON
-        let json = JSON.parse(fichiers);
-
-        document.getElementById("resultat").innerHTML = "Type de la variable : " + typeof(json) + "<br>Contenu de la variable : " + json;
-      </script>
+        var obj, dbParam, xmlhttp, myObj, x, txt = "";
+        obj = ../nodejs/listefichiers.json;
+        dbParam = JSON.stringify(obj);
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            myObj = JSON.parse(this.responseText);
+            txt += "<table border='1'>"
+            for (x in myObj) {
+              txt += "<tr><td>" + myObj[x].name + "</td></tr>";
+            }
+            txt += "</table>"
+            document.getElementById("demo").innerHTML = txt;
+          }
+        };
+        xmlhttp.open("POST", "json_demo_html_table.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + dbParam);
+        </script>
    </body>
 </html>

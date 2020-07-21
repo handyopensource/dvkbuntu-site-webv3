@@ -40,7 +40,7 @@ readTextFile("../nodejs/listefichiers.json", function(text){
           color = '#b6ced4';
         }
       }
-      txt += "</table></div>"
+      txt += "</table>"
       console.log(txt);
       document.getElementById("demo").innerHTML = txt;
     }

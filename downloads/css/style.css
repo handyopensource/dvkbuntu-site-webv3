@@ -41,10 +41,6 @@ body {
      font-weight: normal;
 }
 
-.tableau {
-    height: 800px;
-}
-
 a {
      color: #1f1f1f;
      text-decoration: none !important;
@@ -812,7 +808,7 @@ width: 800px;
 
 .footer {
      background: #191919;
-     padding-top: 20px;
+     padding-top: 45px;
      text-align: center;
 }
 

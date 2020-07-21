@@ -173,11 +173,16 @@
       <!-- LienDL -->
       <iframe src="https://www.dvkbuntu.org/nodejs" id="myiFrame">
       </iframe>
-      <div  id="bannertop" class="tableau">
-        <div class="text-bg">
-          <p id="demo"></p>
-        </div>
+      <div id="bannertop" class="text-bg">
+        <p id="demo" class="demo"></p>
       </div>
+      <style>
+        .demo {
+          padding-top: 500px;
+          padding-bottom: 500px;
+          height: auto;
+        }
+      </style>
       <!-- end LienDL -->
       <!--  footer -->
       <footer id="contact">
@@ -281,16 +286,19 @@
       <script src="../js/invisible.js"></script>
       <script src="../js/callbackxhr.js"></script>
       <script src="../js/cookie.js"></script>
+      <script src="../nodejs/listefichiers.json"></script>
       <script>
-        //Objet JavaScript
         var obj, dbParam, xmlhttp, myObj, x, txt = "";
-        obj = ../nodejs/listefichiers.json;
+        obj = obj = { table: "children", limit: 20 };
+        console.log(obj);
         dbParam = JSON.stringify(obj);
+        console.log(dbParam);
         xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             myObj = JSON.parse(this.responseText);
             txt += "<table border='1'>"
+            console.log(txt);
             for (x in myObj) {
               txt += "<tr><td>" + myObj[x].name + "</td></tr>";
             }
@@ -301,6 +309,6 @@
         xmlhttp.open("POST", "json_demo_html_table.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttp.send("x=" + dbParam);
-        </script>
+      </script>
    </body>
 </html>

@@ -29,7 +29,7 @@ readTextFile("../nodejs/listefichiers.json", function(text){
       txt += "<table border='1'>"
       txt += "<tr><td>Nom du fichier</td><td>Taille en octet</td><td>Liens de téléchargement</td></tr>";
       for (x in myObj) {
-        linkDL = 'https://www.dvkbuntu/downloads/' + myObj[x].name;
+        linkDL = 'https://www.dvkbuntu.org/downloads/' + myObj[x].name;
         strLinkDL = linkDL.toString();
         txt += "<tr><td>" + myObj[x].name + "</td><td>" + myObj[x].size + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
       }

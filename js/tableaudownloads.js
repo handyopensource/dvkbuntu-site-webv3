@@ -26,14 +26,21 @@ readTextFile("../nodejs/listefichiers.json", function(text){
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(dbParam);
-      txt += "<table border='1'>"
-      txt += "<tr><td>Nom du fichier</td><td>Taille en octet</td><td>Liens de téléchargement</td></tr>";
+
+      txt += "<table border='2'>"
+      txt += "<tr style='background-color: #555; color: white;'><td>Nom du fichier</td><td>Taille en octet</td><td>Liens de téléchargement</td></tr>";
+      color = '#b6ced4';
       for (x in myObj) {
         linkDL = 'https://www.dvkbuntu.org/downloads/' + myObj[x].name;
         strLinkDL = linkDL.toString();
-        txt += "<tr><td>" + myObj[x].name + "</td><td>" + myObj[x].size + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
+        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + myObj[x].name + "</td><td>" + myObj[x].size + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
+        if (color === '#b6ced4') {
+          color = '#c3d4b6'
+        } else {
+          color = '#b6ced4';
+        }
       }
-      txt += "</table>"
+      txt += "</table></div>"
       console.log(txt);
       document.getElementById("demo").innerHTML = txt;
     }

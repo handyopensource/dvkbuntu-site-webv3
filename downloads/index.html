@@ -171,16 +171,18 @@
       <!-- end header inner -->
       <!-- end header -->
       <!-- LienDL -->
-      <iframe src="https://www.dvkbuntu.org/nodejs" id="myiFrame">
+      <iframe src="https://www.dvkbuntu.org/nodejs" id="myiFrame" class="myiFrame">
       </iframe>
-      <div id="bannertop" class="text-bg">
+      <div id="bannertop" class="bannertop">
         <p id="demo" class="demo"></p>
       </div>
       <style>
         .demo {
-          padding-top: 500px;
-          padding-bottom: 500px;
-          height: auto;
+          padding: 100px, 100px, 100px, 100px;
+          height: 200px;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
         }
       </style>
       <!-- end LienDL -->
@@ -286,29 +288,6 @@
       <script src="../js/invisible.js"></script>
       <script src="../js/callbackxhr.js"></script>
       <script src="../js/cookie.js"></script>
-      <script src="../nodejs/listefichiers.json"></script>
-      <script>
-        var obj, dbParam, xmlhttp, myObj, x, txt = "";
-        obj = obj = { table: "children", limit: 20 };
-        console.log(obj);
-        dbParam = JSON.stringify(obj);
-        console.log(dbParam);
-        xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            myObj = JSON.parse(this.responseText);
-            txt += "<table border='1'>"
-            console.log(txt);
-            for (x in myObj) {
-              txt += "<tr><td>" + myObj[x].name + "</td></tr>";
-            }
-            txt += "</table>"
-            document.getElementById("demo").innerHTML = txt;
-          }
-        };
-        xmlhttp.open("POST", "json_demo_html_table.php", true);
-        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send("x=" + dbParam);
-      </script>
+      <script src="../js/tableaudownloads.js"></script>
    </body>
 </html>

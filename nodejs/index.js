@@ -12,7 +12,7 @@ const dirTree = require("directory-tree");
 
 app.get('/nodejs', function (req, res) {
   const directoryPath = path.join(__dirname, '../downloads');
-  const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js|style-dark.css|style.css|font-awesome.min.css|fontawesome-webfont.eot|fontawesome-webfont.svg|fontawesome-webfont.ttf|fontawesome-webfont.woff|fontawesome-webfont.woff2|FontAwesome.otf|css|fonts/ });
+  const filteredTree = dirTree(directoryPath, { exclude: /.ftpquota|index.html|listefichiers.json|index.js|style-dark.css|style.css|font-awesome.min.css|fontawesome-webfont.eot|fontawesome-webfont.svg|fontawesome-webfont.ttf|fontawesome-webfont.woff|fontawesome-webfont.woff2|FontAwesome.otf|IcoMoon-Free.ttf|css|fonts/ });
 
   fs.writeFile('listefichiers.json', JSON.stringify(filteredTree), function(err) {
     if(err) return res.send(err);

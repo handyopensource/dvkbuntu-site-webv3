@@ -21,10 +21,16 @@ function formatSizeUnits(bytes){
   return bytes;
 }
 
+function removeExtension(filename){
+    var lastDotPosition = filename.lastIndexOf(".");
+    if (lastDotPosition === -1) return filename;
+    else return filename.substr(0, lastDotPosition);
+}
+
 readTextFile("../nodejs/listefichiers.json", function(text) {
   var data = JSON.parse(text);
   console.log(data);
-  var obj, objResult, sizeUnits, dbParam, xmlhttp, myObj, x, txt = "";
+  var obj, objResult, sizeUnits, filename, filenamestr, linkDL, strLinkDL, nomSansExt, dbParam, xmlhttp, myObj, x, txt = "";
   obj = data;
   console.log(obj);
   objResult = obj.children;
@@ -40,10 +46,14 @@ readTextFile("../nodejs/listefichiers.json", function(text) {
       txt += "<tr style='background-color: #555; color: white;'><td>Nom du fichier</td><td>Taille en octet</td><td>Liens de téléchargement</td></tr>";
       color = '#b6ced4';
       for (x in myObj) {
-        linkDL = 'https://www.dvkbuntu.org/downloads/' + myObj[x].name;
+        filename = myObj[x].name;
+        linkDL = './' + filename;
         strLinkDL = linkDL.toString();
         sizeUnits = formatSizeUnits(myObj[x].size).replace(".", ",");
-        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + myObj[x].name + "</td><td>" + sizeUnits + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
+        filenamestr = filename.toString();
+        nomSansExt = removeExtension(filenamestr);
+        console.log(nomSansExt);
+        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomSansExt +'" target="_blank">' + filename + "</a></td></tr>";
         if (color === '#b6ced4') {
           color = '#c3d4b6'
         } else {

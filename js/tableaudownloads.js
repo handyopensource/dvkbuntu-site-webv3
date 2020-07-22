@@ -30,7 +30,7 @@ function removeExtension(filename){
 readTextFile("../nodejs/listefichiers.json", function(text) {
   var data = JSON.parse(text);
   console.log(data);
-  var obj, objResult, sizeUnits, filename, filenamestr, linkDL, strLinkDL, nomSansExt, dbParam, xmlhttp, myObj, x, txt = "";
+  var obj, objResult, sizeUnits, filename, filenamestr, linkDL, strLinkDL, nomSansExt, nomSansExtCor, extension, nomComplet, dbParam, xmlhttp, myObj, x, txt = "";
   obj = data;
   console.log(obj);
   objResult = obj.children;
@@ -52,8 +52,13 @@ readTextFile("../nodejs/listefichiers.json", function(text) {
         sizeUnits = formatSizeUnits(myObj[x].size).replace(".", ",");
         filenamestr = filename.toString();
         nomSansExt = removeExtension(filenamestr);
+        nomSansExtCor = nomSansExt.replace(".", "\.");
+        extension = myObj[x].extension;
+        extStr = extension.toString();
+        nomComplet = nomSansExtCor + extStr;
+
         console.log(nomSansExt);
-        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomSansExt +'" target="_blank">' + filename + "</a></td></tr>";
+        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomComplet +'" target="_blank">' + filename + "</a></td></tr>";
         if (color === '#b6ced4') {
           color = '#c3d4b6'
         } else {

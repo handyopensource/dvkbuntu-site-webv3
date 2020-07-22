@@ -12,10 +12,19 @@ function readTextFile(file, callback) {
   rawFile.send(null);
 }
 
-readTextFile("../nodejs/listefichiers.json", function(text){
+function formatSizeUnits(bytes){
+  if      (bytes >= 1073741824) { bytes = (bytes / 1073741824).toFixed(2) + " Go"; }
+  else if (bytes >= 1048576)    { bytes = (bytes / 1048576).toFixed(2) + " Mo"; }
+  else if (bytes >= 1024)       { bytes = (bytes / 1024).toFixed(2) + " Ko"; }
+  else if (bytes >= 1)          { bytes = bytes + " o"; }
+  else                          { bytes = "0 o"; }
+  return bytes;
+}
+
+readTextFile("../nodejs/listefichiers.json", function(text) {
   var data = JSON.parse(text);
   console.log(data);
-  var obj, objResult, dbParam, xmlhttp, myObj, x, txt = "";
+  var obj, objResult, sizeUnits, dbParam, xmlhttp, myObj, x, txt = "";
   obj = data;
   console.log(obj);
   objResult = obj.children;
@@ -33,7 +42,8 @@ readTextFile("../nodejs/listefichiers.json", function(text){
       for (x in myObj) {
         linkDL = 'https://www.dvkbuntu.org/downloads/' + myObj[x].name;
         strLinkDL = linkDL.toString();
-        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + myObj[x].name + "</td><td>" + myObj[x].size + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
+        sizeUnits = formatSizeUnits(myObj[x].size).replace(".", ",");
+        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + myObj[x].name + "</td><td>" + sizeUnits + '</td><td><a href="' + linkDL + '" target="page">' + myObj[x].name + "</a></td></tr>";
         if (color === '#b6ced4') {
           color = '#c3d4b6'
         } else {

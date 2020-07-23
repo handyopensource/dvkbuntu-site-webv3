@@ -2,7 +2,5 @@
 !/downloads/index.html
 !/downloads/css/
 !/downloads/fonts/
-/nodejs/
-!/nodejs/index.js
-!/nodejs/package-lock.json
-!/nodejs/package.json
+/nodejs/node_module/*
+/nodejs/listefichiers.json

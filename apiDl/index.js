@@ -16,7 +16,7 @@ function makeConnection(){
   });
 }
 
-app.post('/downloads/:method', async function(req, res) {
+app.post('/downloadsApi/:method', async function(req, res) {
   var method = req.params.method
   switch(method.toLowerCase()){
     case 'addone':{
@@ -63,7 +63,7 @@ async function getTotal(req, res){
 
   if(Date.parse(startDate) && Date.parse(endDate) && (Date.parse(startDate) <= Date.parse(endDate))){
     connection.query(`select COUNT(*) as total from downloads where dateTime BETWEEN '${startDate}' AND  '${endDate}'`, function (error, results, fields) {
-      if (error) 
+      if (error)
         send = {status: 'error'}
       else{
         send = {status: 'ok', result: results}
@@ -72,7 +72,7 @@ async function getTotal(req, res){
     });
   }else{
     connection.query('select COUNT(*) as total from downloads', function (error, results, fields) {
-      if (error) 
+      if (error)
         send = {status: 'error'}
       else{
         send = {status: 'ok', result: results}
@@ -91,7 +91,7 @@ async function getDetails(req, res){
 
   if(Date.parse(startDate) && Date.parse(endDate) && (Date.parse(startDate) <= Date.parse(endDate))){
     connection.query(`select * from downloads where dateTime BETWEEN '${startDate}' AND  '${endDate}'`, function (error, results, fields) {
-      if (error) 
+      if (error)
         send = {status: 'error'}
       else{
         send = {status: 'ok', result: results}
@@ -100,7 +100,7 @@ async function getDetails(req, res){
     });
   }else{
     connection.query('select * from downloads', function (error, results, fields) {
-      if (error) 
+      if (error)
         send = {status: 'error'}
       else{
         send = {status: 'ok', result: results}

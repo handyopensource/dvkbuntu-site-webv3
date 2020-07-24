@@ -16,19 +16,18 @@ function makeConnection(){
   });
 }
 
-app.get('/apiDL/gettotal', async function(req, res) {
-  getTotal(req, res);
+app.get('/apiDL/getdetails', async function(req, res) {
+  getDetails(req, res);
 });
 
-async function getTotal(req, res){
+async function getDetails(req, res){
   var connection = makeConnection();
 
   var startDate = req.query.startdate
   var endDate = req.query.enddate
-  var send = {}
 
   if(Date.parse(startDate) && Date.parse(endDate) && (Date.parse(startDate) <= Date.parse(endDate))){
-    connection.query(`select COUNT(*) as total from downloads where dateTime BETWEEN '${startDate}' AND  '${endDate}'`, function (error, results, fields) {
+    connection.query(`select * from downloads where dateTime BETWEEN '${startDate}' AND  '${endDate}'`, function (error, results, fields) {
       if (error)
         send = {status: 'error'}
       else{
@@ -37,7 +36,7 @@ async function getTotal(req, res){
       res.send(send)
     });
   }else{
-    connection.query('select COUNT(*) as total from downloads', function (error, results, fields) {
+    connection.query('select * from downloads', function (error, results, fields) {
       if (error)
         send = {status: 'error'}
       else{
@@ -46,6 +45,7 @@ async function getTotal(req, res){
       res.send(send)
     });
   }
+
   connection.end();
 }
 

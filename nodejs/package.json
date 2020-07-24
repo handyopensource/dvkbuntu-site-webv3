@@ -10,11 +10,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "directory-tree": "*",
     "express": "*",
+    "path": "^0.12.7",
     "fs": "^0.0.1-security",
-    "mysql": "^2.18.1",
-    "path": "^0.12.7"
+    "directory-tree": "*"
   },
   "engines": {
     "node": "10.20.1"

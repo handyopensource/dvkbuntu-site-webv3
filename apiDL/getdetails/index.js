@@ -16,7 +16,7 @@ function makeConnection(){
   });
 }
 
-app.get('/nodejs/gettotal', async function(req, res) {
+app.get('/apiDL/gettotal', async function(req, res) {
   getTotal(req, res);
 });
 

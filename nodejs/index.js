@@ -20,6 +20,12 @@ app.get('/nodejs', function (req, res) {
   });
 });
 
+if (typeof(PhusionPassenger) !== 'undefined') {
+    app.listen('passenger');
+} else {
+    app.listen(3000);
+}
+
 
 if (typeof(PhusionPassenger) !== 'undefined') {
     app.listen('passenger');

@@ -1,0 +1,7 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/paulluxwaffl/public_html/dvkbuntu-site-webv3/apiDL/addone"
+PassengerBaseURI "/apiDL/addone"
+PassengerNodejs "/home/paulluxwaffl/nodevenv/public_html/dvkbuntu-site-webv3/apiDL/addone/10/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

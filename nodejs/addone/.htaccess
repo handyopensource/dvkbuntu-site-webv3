@@ -1,0 +1,15 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/paulluxwaffl/public_html/dvkbuntu-site-webv3/nodejs/addone"
+PassengerBaseURI "/nodejs/addone"
+PassengerNodejs "/home/paulluxwaffl/nodevenv/public_html/dvkbuntu-site-webv3/nodejs/addone/10/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+SetEnv DB_HOST localhost
+SetEnv DB_NAME paulluxwaffl_downloads
+SetEnv DB_USER paulluxwaffl_downloads
+SetEnv DB_PASS elPolo@37.db
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

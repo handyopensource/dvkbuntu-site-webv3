@@ -16,7 +16,7 @@ function makeConnection(){
   });
 }
 
-app.get('/apiDL/addone', async function(req, res) {
+app.get('/nodejs/addone', async function(req, res) {
   addOne(req, res);
 });
 

@@ -27,7 +27,7 @@ function removeExtension(filename){
     else return filename.substr(0, lastDotPosition);
 }
 
-readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
+readTextFile("../nodejs/listefichiers.json", function(text) {
   var data = JSON.parse(text);
   console.log(data);
   var obj, objResult, sizeUnits, filename, filenamestr, linkDL, strLinkDL, nomSansExt, nomSansExtCor, extension, nomComplet, dbParam, xmlhttp, myObj, x, txt = "";

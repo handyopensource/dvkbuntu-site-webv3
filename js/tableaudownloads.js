@@ -58,7 +58,7 @@ readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
         nomComplet = nomSansExtCor + extStr;
 
         console.log(nomSansExt);
-        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomComplet +'" target="_blank">' + filename + "</a></td></tr>";
+        txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomComplet +'" onclick="AddOneDL();" target="_blank">' + filename + "</a></td></tr>";
         if (color === '#b6ced4') {
           color = '#c3d4b6'
         } else {

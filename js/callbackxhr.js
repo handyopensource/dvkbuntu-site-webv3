@@ -29,50 +29,52 @@ function callURL(url,callback){
     //on envoie la requête.
     xhr.send('');
 }
-function updateBannerTop(){
+function updateBannerTop() {
+  if (document.getElementById('Titre DVKVersion') !== null) {
     console.log(document.getElementById('Titre DVKVersion').innerText);
     if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
-        var currentBannerTop = './bannertop1.html';
-        var currentCompteurs='./header1.html';
-        var currentPictures='./banner_main1.html';
-        var currentBasdePage='./BasdePage1.html';
+      var currentBannerTop = './bannertop1.html';
+      var currentCompteurs='./header1.html';
+      var currentPictures='./banner_main1.html';
+      var currentBasdePage='./BasdePage1.html';
     }else{
-        var currentBannerTop = './bannertop0.html';
-        var currentCompteurs='./header0.html';
-        var currentPictures='./banner_main0.html';
-        var currentBasdePage='./BasdePage0.html';
+      var currentBannerTop = './bannertop0.html';
+      var currentCompteurs='./header0.html';
+      var currentPictures='./banner_main0.html';
+      var currentBasdePage='./BasdePage0.html';
     }
     callURL(currentBannerTop,function(err,result){
-        //si la fonction renvoie une erreur alors on annule.
-        if (err){
-            return;
-        }
-        // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
-        document.getElementById("bannertop").innerHTML = result;
+      //si la fonction renvoie une erreur alors on annule.
+      if (err){
+        return;
+      }
+      // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+      document.getElementById("bannertop").innerHTML = result;
     })
     callURL(currentCompteurs,function(err,result){
-    //si la fonction renvoie une erreur alors on annule.
-        if (err){
-            return;
-            return;
-        }
-        // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
-        document.getElementById("mesHeaders").innerHTML = result;
+      //si la fonction renvoie une erreur alors on annule.
+      if (err){
+        return;
+        return;
+      }
+      // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+      document.getElementById("mesHeaders").innerHTML = result;
     })
     callURL(currentPictures,function(err,result){
-    //si la fonction renvoie une erreur alors on annule.
-        if (err){
-            return;
-        }
-        // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
-        document.getElementById("banner_main").innerHTML = result;
+      //si la fonction renvoie une erreur alors on annule.
+      if (err){
+        return;
+      }
+      // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+      document.getElementById("banner_main").innerHTML = result;
     })
     callURL(currentBasdePage,function(err,result){
-    //si la fonction renvoie une erreur alors on annule.
-        if (err){
-            return;
-        }
-        // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
-        document.getElementById("BasdePage").innerHTML = result;
+      //si la fonction renvoie une erreur alors on annule.
+      if (err){
+        return;
+      }
+      // si la fonction ne renvoie pas d'erreur on écrit dans le html le tableau de la requête.
+      document.getElementById("BasdePage").innerHTML = result;
     })
   }
+}

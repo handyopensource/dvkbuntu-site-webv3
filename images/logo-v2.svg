@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 86 28"
-   height="28"
-   width="86"
+   viewBox="0 0 160 40"
+   height="40"
+   width="160"
    id="svg2"
    version="1.1"
    sodipodi:docname="logo-v2.svg"
@@ -25,16 +25,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="3840"
-     inkscape:window-height="1831"
+     inkscape:window-height="1853"
      id="namedview191"
      showgrid="false"
      inkscape:zoom="11.125147"
-     inkscape:cx="28.281816"
-     inkscape:cy="7.5585779"
+     inkscape:cx="112.8926"
+     inkscape:cy="15.555687"
      inkscape:window-x="0"
-     inkscape:window-y="100"
+     inkscape:window-y="79"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1059" />
+     inkscape:current-layer="svg2" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -610,7 +610,7 @@
   </defs>
   <g
      id="g1059"
-     transform="matrix(0.38165995,0,0,0.38002883,-4.9951775,-17.47411)">
+     transform="matrix(0.53833768,0,0,0.54566247,-7.1849151,-25.141747)">
     <g
        aria-label="L'informatique pous tous"
        transform="matrix(0.65866253,0,0,0.56037238,138.79028,-111.523)"
@@ -652,7 +652,7 @@
            style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;font-family:Luciole;-inkscape-font-specification:'Luciole, Semi-Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
          id="flowPara1265" /></flowRoot>    <g
        id="g1116"
-       transform="matrix(0.63473159,0,0,0.6282308,5.1112216,44.144453)">
+       transform="matrix(0.63036752,0,0,0.6282308,5.1783427,44.144453)">
       <ellipse
          ry="14.780279"
          rx="17.992929"

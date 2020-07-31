@@ -294,10 +294,10 @@
       function AddOneDL() {
         var fenetreOuverte = document.getElementById('myiFrame');
         fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
+        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
+        wait(5000);
         Compteur();
         window.location = document.location;
-        wait(5000);
-        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
       }
       function wait(ms){
         var start = new Date().getTime();

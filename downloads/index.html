@@ -292,19 +292,13 @@
       <script src="../js/compteur.js"></script>
       <script>
       function AddOneDL() {
-        var fenetreOuverte = document.getElementById('myiFrame');
-        fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
-        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
-        wait(5000);
-        Compteur();
-        window.location = document.location;
-      }
-      function wait(ms){
-        var start = new Date().getTime();
-        var end = start;
-        while(end < start + ms) {
-          end = new Date().getTime();
-        }
+        delay(function(){
+          var fenetreOuverte = document.getElementById('myiFrame');
+          fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
+          document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
+        },5000);
+          Compteur();
+          window.location = document.location;
       }
       </script>
    </body>

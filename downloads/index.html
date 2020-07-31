@@ -296,7 +296,8 @@
         fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
         Compteur();
         window.location = document.location;
-        wait(5);
+        wait(5000);
+        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
       }
       function wait(ms){
         var start = new Date().getTime();
@@ -304,7 +305,6 @@
         while(end < start + ms) {
           end = new Date().getTime();
         }
-        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
       }
       </script>
    </body>

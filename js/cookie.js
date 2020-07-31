@@ -41,7 +41,7 @@ function checkCookie() {
     invisible();
   }
   var Li = getCookie("Light");
-  if (Li == 1) {
+  if (Li == 1 && document.getElementById('Titre DVKVersion') !== null) {
     updateBannerTop();
   }
   var mv = getCookie("malvoyant");

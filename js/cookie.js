@@ -10,13 +10,11 @@ function setCookie(cname, exdays) {
   if (cvalue == "" || cvalue == null) {
     cvalue = 0;
   }
-  console.log(cvalue);
   if (cvalue == 1) {
     cvalue = 0;
   } else if (cvalue == 0) {
     cvalue = 1;
   }
-  console.log(cvalue);
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 

@@ -31,7 +31,6 @@ function callURL(url,callback){
 }
 function updateBannerTop() {
   if (document.getElementById('Titre DVKVersion') !== null) {
-    console.log(document.getElementById('Titre DVKVersion').innerText);
     if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
       var currentBannerTop = './bannertop1.html';
       var currentCompteurs='./header1.html';

@@ -1,4 +1,3 @@
-console.log("Test");
 
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();
@@ -29,14 +28,10 @@ function removeExtension(filename){
 
 readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
   var data = JSON.parse(text);
-  console.log(data);
   var obj, objResult, sizeUnits, filename, filenamestr, linkDL, strLinkDL, nomSansExt, nomSansExtCor, extension, nomComplet, dbParam, xmlhttp, myObj, x, txt = "";
   obj = data;
-  console.log(obj);
   objResult = obj.children;
-  console.log(objResult);
   dbParam = JSON.stringify(objResult);
-  console.log(dbParam);
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -57,7 +52,6 @@ readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
         extStr = extension.toString();
         nomComplet = nomSansExtCor + extStr;
 
-        console.log(nomSansExt);
         txt += "<tr style='background-color:" + color +"; color: black;'><td>" + filename + "</td><td>" + sizeUnits + '</td><td><a href="' + strLinkDL + '" download="' + nomComplet +'" onclick="AddOneDL();" target="_blank">' + filename + "</a></td></tr>";
         if (color === '#b6ced4') {
           color = '#c3d4b6'
@@ -66,7 +60,6 @@ readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
         }
       }
       txt += "</table>"
-      console.log(txt);
       document.getElementById("demo").innerHTML = txt;
     }
   };

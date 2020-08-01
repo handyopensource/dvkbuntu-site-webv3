@@ -26,7 +26,6 @@ async function addOne(req, res){
   connection.query('insert into downloads (dateTime) values (NOW());', function (error, results, fields) {
     if (error){
       send = {status: 'error'};
-      console.log(error);
     }else{
       send = {status: 'ok'}
     }

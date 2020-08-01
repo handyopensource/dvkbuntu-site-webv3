@@ -1,7 +1,6 @@
 var buttonChangeStyle = document.getElementById("replaceonclicktest");
 buttonChangeStyle.onclick = function changementdestyle() {
 
-    console.log("clicked");
     //var ghLink = document.getElementsById("Github2Dark");
     //var lpLink = document.getElementsById("Launchpad2Dark");
 

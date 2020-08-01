@@ -56,6 +56,25 @@
    <!-- body -->
    <body class="main-layout" onload="Compteur(); checkCookie(); document.getElementById('myiFrame').style.display='none'; Compteur();">
       <!-- loader  -->
+      <style>
+        .loader_bg {
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+         }
+
+         .loader_bg img {
+            width: 280px;
+         }
+      </style>
       <div class="loader_bg">
          <img src="../images/loading.gif" alt="#" />
       </div>

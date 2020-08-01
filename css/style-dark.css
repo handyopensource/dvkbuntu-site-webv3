@@ -239,23 +239,6 @@ button {
 
 /*---------------------------- preloader area ----------------------------*/
 
-.loader_bg {
-     z-index: 999;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: absolute;
-     background-color: black;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-}
-
-.loader_bg img {
-     width: 280px;
-}
-
 ul.btn {
      float: right;
 }

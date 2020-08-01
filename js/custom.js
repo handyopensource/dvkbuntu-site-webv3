@@ -3,28 +3,29 @@
 ---------------------------------------------------------------------*/
 
 $(function () {
-	
+
 	"use strict";
-	
+
 	/* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	setTimeout(function () {
 		$('.loader_bg').fadeToggle();
+		$('body').css('overflow', 'auto')
 	}, 1500);
-	
+
 	/* Tooltip
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
 	});
-	
-	
-	
+
+
+
 	/* Mouseover
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$(document).ready(function(){
 		$(".main-menu ul li.megamenu").mouseover(function(){
 			if (!$(this).parent().hasClass("#wrapper")){
@@ -35,15 +36,15 @@ $(function () {
 			$("#wrapper").removeClass('overlay');
 		});
 	});
-	
-	
-	
 
-	
-	
+
+
+
+
+
 	/* Toggle sidebar
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-     
+
      $(document).ready(function () {
        $('#sidebarCollapse').on('click', function () {
           $('#sidebar').toggleClass('active');
@@ -51,7 +52,7 @@ $(function () {
        });
      });
 
-     /* Product slider 
+     /* Product slider
      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
      // optional
      $('#blogCarousel').carousel({

@@ -252,18 +252,7 @@ button {
      right: 0;
 }
 
-.loader {
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.loader img {
+.loader_bg img {
      width: 280px;
 }
 
@@ -374,7 +363,7 @@ ul.btn li:last-child {
      background: #003a7c;
      background-size: 100% 100%;
      position: fixed;
-     z-index: 999;
+     z-index: 990;
      border-width: 0px 0px 2px 0px;
      border-style: solid;
      border-color: #222222;

@@ -42,7 +42,7 @@ function Compteur() {
       .then(function(data3) {
         nbWeek = `${data1.result[0].total}`;
         nbWeekDV = `${data2.summaries.time.downloads}`;
-        nbWeekDVL = `${data3.total}`;
+        nbWeekDVL = `${data3.summaries.time.downloads}`;
         var weektot = parseInt(nbWeek,10) + parseInt(nbWeekDV,10) + parseInt(nbWeekDVL,10);
         weektot = weektot.toString() + '/semaine';
         document.getElementById('byweek').setAttribute('src','');
@@ -76,7 +76,7 @@ function Compteur() {
       })
       .then(function(data3) {
         nbTotal = `${data1.result[0].total}`;
-        nbTotalDV = `${data2.summaries.time.downloads}`;
+        nbTotalDV = `${data2.total}`;
         nbTotalDVL = `${data3.total}`;
         var Totaltot = parseInt(nbTotal,10) + parseInt(nbTotalDV,10) + parseInt(nbTotalDVL,10);
         Totaltot = Totaltot.toString() + ' au total';

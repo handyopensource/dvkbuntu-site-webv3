@@ -2,7 +2,13 @@ function alertDiag(texte, myhref) {
     if (confirm(texte)) {
       var n = myhref.startsWith('https');
       if (n) {
-          window.open(myhref);
+          var n1 = myhref.startsWith('https://www.dvkbuntu.org');
+          var n2 = myhref.startsWith('https://dvkbuntu.org');
+          if (n1 || n2) {
+            location.href = myhref;
+          } else {
+            window.open(myhref);
+          }
       }
       var target = $(myhref);
       if(target.length) {

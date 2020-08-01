@@ -126,7 +126,7 @@ ol {
 p {
      margin: 0px;
      font-weight: 500;
-     font-size: 15px;
+     font-size: 24px;
      line-height: 24px;
 }
 
@@ -452,7 +452,7 @@ ul.btn li:last-child {
 }
 
 .text-bg p {
-     line-height: 28px;
+     line-height: 40px;
      font-weight: 500;
      padding-bottom: 20px;
      display: block;

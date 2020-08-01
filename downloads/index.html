@@ -98,7 +98,7 @@
                                 }
                                </style>
                                <div class="yellow">
-                                <a class="nav-link" onClick="setCookie('malvoyant', 90); changementdestyle(); window.location.reload();" href="#">
+                                <a class="nav-link" onClick="showLoader(); setCookie('malvoyant', 90); changementdestyle(); window.location.reload();" href="#">
                                   <div class="yellow">
                                       <i class="fa fa-low-vision" aria-hidden="true" title="Mode Malvoyant">
                                         <div class="mypolice">&nbsp;&nbsp;Mode Malvoyant</div>
@@ -290,13 +290,14 @@
       <script src="../js/cookie.js"></script>
       <script src="../js/tableaudownloads.js"></script>
       <script src="../js/compteur.js"></script>
+      <script src="../js/showLoader.js"></script>
       <script>
-      function AddOneDL() {
-        var fenetreOuverte = document.getElementById('myiFrame');
-        fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
-        document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
-        Compteur();
-      }
+        function AddOneDL() {
+          var fenetreOuverte = document.getElementById('myiFrame');
+          fenetreOuverte.src = 'https://dvkbuntu.org/nodejs/addone';
+          document.getElementById("merci").innerHTML = "Nous vous remercions d'avoir téléchargé un de nos fichiers, l'équipe de DVKBuntu";
+          Compteur();
+        }
       </script>
    </body>
 </html>

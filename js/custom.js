@@ -9,10 +9,10 @@ $(function () {
 	/* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	setTimeout(function () {
-		$('.loader_bg').fadeToggle();
-		$('body').css('overflow', 'auto')
-	}, 1500);
+	///setTimeout(function () {
+	//	$('.loader_bg').fadeToggle();
+	//	$('body').css('overflow', 'auto')
+	//}, 1500);
 
 	/* Tooltip
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */

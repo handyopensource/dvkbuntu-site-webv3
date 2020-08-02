@@ -34,6 +34,10 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+
+  $('body').css('overflow', 'hidden');
+  $('.loader_bg').fadeIn(0);
+
   var aC = getCookie("acceptCookies");
   if (aC == 1) {
     invisible();
@@ -46,4 +50,7 @@ function checkCookie() {
   if (mv == 1) {
     changementdestyle();
   }
+
+  $('.loader_bg').fadeOut(5000);
+  $('body').css('overflow', 'auto');
 }

@@ -2,6 +2,7 @@
 !/downloads/index.html
 !/downloads/css/
 !/downloads/fonts/
+!/downloads/js/
 
 /nodejs/listFile/node_module/*
 /nodejs/listFile/tmp/*

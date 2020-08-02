@@ -1,6 +1,6 @@
-<!--#include file="../../js/callbackxhr.js" -->
-<!--#include file="changeStyle.js" -->
-<!--#include file="../../js/invisible.js" -->
+<!--#include file="callbackxhr.js" -->
+<!--#include file="changeStyle2.js" -->
+<!--#include file="invisible.js" -->
 
 function setCookie(cname, exdays) {
   var d = new Date();

@@ -50,7 +50,15 @@ function checkCookie() {
   if (mv == 1) {
     changementdestyle();
   }
-
+  wait(2000);
   $('.loader_bg').fadeOut(5000);
   $('body').css('overflow', 'auto');
+}
+
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
 }

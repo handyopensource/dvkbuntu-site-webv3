@@ -22,7 +22,6 @@ function changementdestyle() {
       document.getElementById("Launchpad2Dark").src = "images/OpenSource/Launchpad.png";
     }
   }
-
-  $('.loader_bg').fadeOut(5000);
+  $('.loader_bg').fadeOut(8000);
   $('body').css('overflow', 'auto');
 }

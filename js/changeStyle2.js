@@ -13,7 +13,6 @@ function changementdestyle() {
   } else {
     baliseLink.setAttribute("href", "css/style.css");
   }
-
-  $('.loader_bg').fadeOut(5000);
+  $('.loader_bg').fadeOut(8000);
   $('body').css('overflow', 'auto');
 }

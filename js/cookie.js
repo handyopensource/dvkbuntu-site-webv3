@@ -44,7 +44,7 @@ function checkCookie() {
   }
   var Li = getCookie("Light");
   if (Li == 1) {
-    updateBannerTop();
+    updateBannerTop(0);
   }
   var mv = getCookie("malvoyant");
   if (mv == 1) {

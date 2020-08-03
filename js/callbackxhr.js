@@ -29,9 +29,11 @@ function callURL(url,callback){
     //on envoie la requête.
     xhr.send('');
 }
-function updateBannerTop() {
-  $('body').css('overflow', 'hidden');
-  $('.loader_bg').fadeIn(0);
+function updateBannerTop(myinit) {
+  if (myinit === 1) {
+    $('body').css('overflow', 'hidden');
+    $('.loader_bg').fadeIn(0);
+  }
   if (document.getElementById('Titre DVKVersion') !== null) {
     if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
       var currentBannerTop = './bannertop1.html';
@@ -78,6 +80,8 @@ function updateBannerTop() {
       document.getElementById("BasdePage").innerHTML = result;
     })
   }
-  $('.loader_bg').fadeOut(5000);
-  $('body').css('overflow', 'auto');
+  if (myinit === 1) {
+    $('.loader_bg').fadeOut(5000);
+    $('body').css('overflow', 'auto');
+  }
 }

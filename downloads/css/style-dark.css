@@ -332,8 +332,8 @@ ul.btn li:last-child {
 
 .dl {
   align-content: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .padd_right {

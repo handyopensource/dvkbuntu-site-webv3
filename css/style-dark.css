@@ -149,7 +149,7 @@ a,
 }
 
 img {
-     max-width: 100%;
+     max-width: 80%;
      height: auto;
 }
 
@@ -332,8 +332,8 @@ ul.btn li:last-child {
 
 .dl {
   align-content: center;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: -1px;
+  padding-bottom: -1px;
 }
 
 .padd_right {

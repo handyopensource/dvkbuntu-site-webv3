@@ -603,15 +603,15 @@ width: 800px;
 
 .service_box h3 {
      color: #fff;
-     font-size: 25px;
+     font-size: 40px;
      text-transform: uppercase;
-     line-height: 25px;
+     line-height: 45px;
      transition: ease-in all 0.5s;
 }
 
 .service_box p {
-     font-size: 17px;
-     line-height: 27px;
+     font-size: 30px;
+     line-height: 40px;
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -701,9 +701,9 @@ width: 800px;
 }
 
 .customer_Carousel .test_box h4 {
-     font-size: 24px;
+     font-size: 40px;
      color: #fff;
-     line-height: 20px;
+     line-height: 45px;
      display: block;
      text-align: center;
      text-transform: uppercase;
@@ -714,8 +714,8 @@ width: 800px;
 .customer_Carousel .test_box span {
      color: #fff;
      display: block;
-     font-size: 17px;
-     padding-bottom: 20px;
+     font-size: 27px;
+     padding-bottom: 30px;
 }
 
 .customer_Carousel .test_box i {
@@ -726,8 +726,8 @@ width: 800px;
 }
 
 .customer_Carousel .test_box p {
-     font-size: 17px;
-     line-height: 28px;
+     font-size: 25px;
+     line-height: 30px;
      color: #fff;
      margin-bottom: 30px;
 }

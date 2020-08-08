@@ -7,11 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 512 512"
+   viewBox="0 0 95 90"
    version="1.1"
    id="svg4"
    sodipodi:docname="quote.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   width="95"
+   height="90">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -20,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,17 +41,18 @@
      inkscape:window-height="1853"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.4609375"
-     inkscape:cx="256"
-     inkscape:cy="169.22034"
+     inkscape:zoom="10.429825"
+     inkscape:cx="68.343493"
+     inkscape:cy="35.715445"
      inkscape:window-x="0"
      inkscape:window-y="79"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4" />
   <path
-     d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+     d="M 85.880642,44.933546 H 71.123228 V 32.132872 c 0,-7.060372 5.294225,-12.800676 11.805933,-12.800676 h 1.47574 c 2.45342,0 4.427224,-2.140111 4.427224,-4.800252 V 4.9314382 c 0,-2.6601393 -1.973804,-4.80025433 -4.427224,-4.80025433 h -1.47574 c -16.306946,0 -29.514829,14.32075613 -29.514829,32.00168813 v 48.002532 c 0,5.300282 3.966055,9.600507 8.854449,9.600507 h 23.611861 c 4.888395,0 8.854451,-4.300225 8.854451,-9.600507 v -25.60135 c 0,-5.300279 -3.966056,-9.600508 -8.854451,-9.600508 z m -53.126693,0 H 17.996533 V 32.132872 c 0,-7.060372 5.294225,-12.800676 11.805934,-12.800676 h 1.475741 c 2.45342,0 4.427227,-2.140111 4.427227,-4.800252 V 4.9314382 c 0,-2.6601393 -1.973807,-4.80025433 -4.427227,-4.80025433 H 29.802467 C 13.495523,0.13118387 0.2876366,14.45194 0.2876366,32.132872 v 48.002532 c 0,5.300282 3.9660553,9.600507 8.8544487,9.600507 H 32.753949 c 4.888395,0 8.854451,-4.300225 8.854451,-9.600507 v -25.60135 c 0,-5.300279 -3.966056,-9.600508 -8.854451,-9.600508 z"
      id="path2"
-     style="fill:#1a375d;fill-opacity:1" />
+     style="fill:#1a375d;fill-opacity:1;stroke-width:0.19208196"
+     inkscape:connector-curvature="0" />
 </svg>
 <!--
 Font Awesome Free 5.2.0 by @fontawesome - https://fontawesome.com

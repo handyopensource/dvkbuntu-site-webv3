@@ -37,7 +37,7 @@ readTextFile("../nodejs/listFile/listefichiers.json", function(text) {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(dbParam);
 
-      txt += "<table border='2'>"
+      txt += "<style>table {width:60%;} td, th {width:30%;}</style><table border='2'>"
       txt += "<tr style='background-color: #555; color: white;'><td>Nom du fichier</td><td>Taille en octet</td><td>Liens de téléchargement</td></tr>";
       color = '#b6ced4';
       for (x in myObj) {

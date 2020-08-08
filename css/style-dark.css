@@ -98,6 +98,7 @@ h6 {
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
+     width: 100%;
 }
 
 h1 a,
@@ -296,8 +297,8 @@ ul.btn li:last-child {
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 8px;
      color: #fff;
-     font-size: 20px;
-     line-height: 32px;
+     font-size: 40px;
+     line-height: 80px;
      font-weight: 600;
      display: inline-block;
 }
@@ -308,7 +309,7 @@ ul.btn li:last-child {
 
 .mypolice {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 80px;
   display: none;
 }
 
@@ -341,7 +342,7 @@ ul.btn li:last-child {
 
 .header {
      width: 100%;
-     height: 52px;
+     height: 100px;
      padding: 5px 40px;
      background: #003a7c;
      background-size: 100% 100%;
@@ -354,7 +355,9 @@ ul.btn li:last-child {
 
 .logo a {
      color: #fff;
-     line-height: 40px;
+     line-height: 80px;
+     height: 100%;
+     width: 100%;
 }
 
 .logo a :hover {

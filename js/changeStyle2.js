@@ -4,7 +4,7 @@ function changementdestyle() {
   //var lpLink = document.getElementsById("Launchpad2Dark");
 
   $('body').css('overflow', 'hidden');
-  $('.loader_bg').fadeIn(0);
+  $('.loader_bg').show();
 
   var baliseLink = document.getElementById("linkcss");
   var etat = baliseLink.href.endsWith("css/style.css");
@@ -13,6 +13,6 @@ function changementdestyle() {
   } else {
     baliseLink.setAttribute("href", "css/style.css");
   }
-  $('.loader_bg').fadeOut(8000);
+  $('.loader_bg').fadeOut(2800);
   $('body').css('overflow', 'auto');
 }

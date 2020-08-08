@@ -32,7 +32,7 @@ function callURL(url,callback){
 function updateBannerTop(myinit) {
   if (myinit === 1) {
     $('body').css('overflow', 'hidden');
-    $('.loader_bg').fadeIn(0);
+    $('.loader_bg').show();
   }
   if (document.getElementById('Titre DVKVersion') !== null) {
     if (document.getElementById('Titre DVKVersion').innerText == 'DVKBuntu'){
@@ -81,7 +81,7 @@ function updateBannerTop(myinit) {
     })
   }
   if (myinit === 1) {
-    $('.loader_bg').fadeOut(8000);
+    $('.loader_bg').fadeOut(2800);
     $('body').css('overflow', 'auto');
   }
 }

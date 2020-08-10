@@ -382,6 +382,11 @@ ul.btn li:last-child {
   align-items: center;
 }
 
+.alpha {
+  font-weight: bold !important;
+  font-size: 240% !important;
+  color: black !important;
+}
 .banner_main {
      background: #003a7c;
      padding-top: 60px;

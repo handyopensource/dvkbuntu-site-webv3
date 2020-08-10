@@ -130,6 +130,12 @@ p {
      line-height: 24px;
 }
 
+.alpha {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
 a {
      color: #222222;
      text-decoration: none;

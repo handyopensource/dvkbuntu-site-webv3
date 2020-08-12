@@ -317,12 +317,12 @@ ul.btn li:last-child {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0 8px;
-     color: #fff;
-     font-size: 20px;
-     line-height: 32px;
-     font-weight: 600;
-     display: inline-block;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 600;
+    display: inline-block;
 }
 
 .texttoright {
@@ -331,7 +331,7 @@ ul.btn li:last-child {
 
 .mypolice {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 80px;
   display: none;
 }
 
@@ -354,8 +354,8 @@ ul.btn li:last-child {
 
 .dl {
   align-content: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: -1px;
+  padding-bottom: -1px;
 }
 
 .padd_right {
@@ -369,19 +369,31 @@ ul.btn li:last-child {
      background: #003a7c;
      background-size: 100% 100%;
      position: fixed;
-     z-index: 999;
+     z-index: 990;
      border-width: 0px 0px 2px 0px;
      border-style: solid;
      border-color: #222222;
 }
 
+.logo img {
+  max-width:300%;
+  height:auto;
+}
+
 .logo a {
      color: #fff;
-     line-height: 40px;
+     line-height: 80px;
+     height: 80px;
+     width: 300px;
 }
 
 .logo a :hover {
-     background-color: #000;
+  box-sizing: content-box;
+  width: 100%;
+  border: solid #203b57 10px;
+  padding: 5px;
+  background-color: #003b79;
+  border-radius: 20px;
 }
 
 /** banner section **/
@@ -452,7 +464,7 @@ ul.btn li:last-child {
 }
 
 .text-bg p {
-     line-height: 28px;
+     line-height: 40px;
      font-weight: 500;
      padding-bottom: 20px;
      display: block;

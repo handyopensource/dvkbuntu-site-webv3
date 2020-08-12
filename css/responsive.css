@@ -17,12 +17,39 @@
     .text-bg h1 {
         font-size: 52px;
     }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        line-height: 34px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    height: 60px;
+  }
+  .row {
+    height: 60px;
+  }
+  .full {
+    height: 60px;
+    width: 200px;
+  }
+  .center-desk {
+    height: 60px;
+    width: 200px;
+  }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0px 7px;
         font-size: 15px;
+        line-height: 32px;
+    }
+    .header {
+        padding: 0px 0px 0px 0px;
+        height:60px;
+    }
+    .logo {
+        margin-top: 0px;
+        line-height: 80px;
     }
     .about {
       height: 100%;
@@ -53,14 +80,42 @@
     .dlsf {
       display: inline;
       height: 60%;
-      padding-left: 0px;
+      padding-left: 10px;
+    }
+    .logo {
+        margin: auto;
+        line-height: 60px;
+        height:100%;
+        width: 100%;
+    }
+    .logo a {
+      line-height: 40px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: 60px;
+  }
+  .row {
+    height: 60px;
+  }
+  .full {
+    height: 60px;
+    width: 200px;
+  }
+  .center-desk {
+    height: 60px;
+    width: 200px;
+  }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0 4px;
         font-size: 18px;
+        line-height: 32px;
+    }
+    .header {
+        padding: 0px 0px 0px 0px;
+        height:60px;
     }
     .mypolice {
       font-family: 'Lato', sans-serif;
@@ -120,11 +175,20 @@
     .dlsf {
       display: inline;
       height: 40%;
-      padding-left: 0px;
+      padding-left: 95px;
     }
     .heading3 .mybackground {
       height: 50%;
       font-size: 2.5vw;
+    }
+    .logo {
+        margin: auto;
+        line-height: 60px;
+        height:100%;
+        width: 100%;
+    }
+    .logo a {
+      line-height: 40px;
     }
 }
 
@@ -132,16 +196,51 @@
   .mentionslegales {
     width: 100%;
   }
+  .header {
+      padding: 0px 0px 0px 0px;
+      height:60px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+   .container {
+     height: 60px;
+   }
+   .row {
+     height: 60px;
+   }
+   .full {
+     height: 60px;
+     width: 200px;
+   }
+   .center-desk {
+     height: 60px;
+     width: 200px;
+   }
    .mypolice {
      font-family: 'Lato', sans-serif;
      font-size: 15px;
      display: inline-block;
    }
+   .header {
+       padding: 0px 0px 0px 0px;
+       height:60px;
+   }
    .about {
      height: 100%;
+   }
+   .logo {
+       margin-top: -20px;
+       line-height: 100%;
+       height:100%;
+       width: 200px;
+   }
+   .logo img {
+     max-width: 100%;
+     height: 100px;
+     vertical-align: top;
+     padding: -10px;
+     width: 200px;
    }
     .text-bg h1 {
         font-size: 52px;
@@ -194,11 +293,13 @@
         width: max-content;
         margin-right: 20px;
         z-index: 999;
+        height:20px;
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         color: #fff;
         display: block;
+        line-height: 32px;
     }
     .navigation.navbar-dark .navbar-nav .nav-link:focus,
     .navigation.navbar-dark .navbar-nav .nav-link:hover {
@@ -231,10 +332,11 @@
 @media (max-width: 575px) {
     .header {
         padding: 0px 0px 0px 0px;
+        height:60px;
     }
     .logo {
         margin-top: 0px;
-        line-height: 50px;
+        line-height: 40px;
     }
     .full {
       text-align: center;
@@ -242,6 +344,7 @@
     .mypolice {
       font-family: 'Lato', sans-serif;
       display: inline-block;
+      font-size: 40px;
     }
     .text-bg h1 {
         font-size: 52px;
@@ -263,7 +366,8 @@
         margin-bottom: 20px;
     }
     .text-bg a {
-        max-width: 132px;0
+        max-width     height: 80px;
+     width: 300px;: 132px;0
         padding: 10px 0px;
     }
     .titlepage h2 {
@@ -297,19 +401,22 @@
         display: inherit !important;
         padding: 0 !important;
         width: 100%;
-        margin-top: -43px;
+        margin-top: -65px;
     }
     .navigation .navbar-collapse {
         background: #000;
         padding: 20px;
-        margin-top: 17px;
+        margin-top: 0px;
         position: absolute;
         width: 100%;
         z-index: 999;
+        height:20px;
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0px 0;
         color: #fff;
+        line-height: 32px;
+        font-size: 40px;
     }
     .navigation.navbar-dark .navbar-nav .nav-link:focus,
     .navigation.navbar-dark .navbar-nav .nav-link:hover {
@@ -324,6 +431,7 @@
     .navigation.navbar-dark .navbar-toggler-icon {
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
+        margin-right: 350px;
     }
     .dlsf {
       display: none;
@@ -341,5 +449,11 @@
     .heading3 .mybackground {
       height: 25%;
       font-size: 2.5vw;
+    }
+    .logo img {
+      max-width: 80%;
+      height: 60px;
+      vertical-align: top;
+      padding: 5px;
     }
 }

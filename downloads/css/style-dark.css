@@ -355,15 +355,25 @@ ul.btn li:last-child {
      border-color: #222222;
 }
 
+.logo img {
+  max-width:300%;
+  height:auto;
+}
+
 .logo a {
      color: #fff;
      line-height: 80px;
-     height: 100%;
-     width: 100%;
+     height: 80px;
+     width: 300px;
 }
 
 .logo a :hover {
-     background-color: #000;
+    box-sizing: content-box;
+    width: 100%;
+    border: solid #203b57 10px;
+    padding: 5px;
+    background-color: #003b79;
+    border-radius: 20px;
 }
 
 /** banner section **/
@@ -389,7 +399,7 @@ ul.btn li:last-child {
 
 .alpha {
   font-weight: bold !important;
-  font-size: 30px !important;
+  font-size: 40px !important;
 }
 
 .banner_main {
@@ -567,6 +577,7 @@ text-justify: inter-word;
 background: #000;
 color: #fff;
 width: 800px;
+font-size: 25px;
 }
 .mentionslegales a {
   color: #00f;

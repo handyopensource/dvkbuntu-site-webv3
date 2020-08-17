@@ -24,12 +24,12 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
+/**  .container {
     height: 60px;
   }
   .row {
     height: 60px;
-  }
+  }**/
   .full {
     height: 60px;
     width: 200px;

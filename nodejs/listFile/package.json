@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "express": "*",
-    "path": "^0.12.7",
+    "path": "*",
     "fs": "^0.0.1-security",
-    "directory-tree": "*"
+    "directory-tree": "*",
+    "dotenv": "*"
   },
   "engines": {
     "node": "10.20.1"

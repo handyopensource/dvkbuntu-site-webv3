@@ -10,8 +10,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "*",
-    "mysql": "^2.18.1"
+    "dotenv": "*",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "path": "*"
   },
   "engines": {
     "node": "10.20.1"

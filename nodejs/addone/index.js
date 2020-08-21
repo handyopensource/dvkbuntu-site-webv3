@@ -1,9 +1,7 @@
-if (typeof(PhusionPassenger) !== 'undefined') {
-    PhusionPassenger.configure({ autoInstall: false });
-}
-
 const express = require('express');
 const app = express();
+
+require('dotenv').config();
 
 const mysql = require('mysql');
 
@@ -17,7 +15,7 @@ function makeConnection(){
 }
 
 app.get('/nodejs/addone', async function(req, res) {
-  addOne(req, res);
+    addOne(req, res);
 });
 
 async function addOne(req, res){
@@ -34,8 +32,4 @@ async function addOne(req, res){
   connection.end();
 }
 
-if (typeof(PhusionPassenger) !== 'undefined') {
-    app.listen('passenger');
-} else {
-    app.listen(3000);
-}
+app.listen(3000);

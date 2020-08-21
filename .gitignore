@@ -32,3 +32,10 @@
 /nodejs/addone/.htaccess
 !/nodejs/addone/index.js
 !/nodejs/addone/package.json
+
+/nodejs/listFile/.env
+/nodejs/gettotal/.env
+/nodejs/getdetails/.env
+/nodejs/addone/.env
+
+/.env

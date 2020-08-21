@@ -1,9 +1,7 @@
-if (typeof(PhusionPassenger) !== 'undefined') {
-    PhusionPassenger.configure({ autoInstall: false });
-}
-
 const express = require('express');
 const app = express();
+
+require('dotenv').config();
 
 const path = require('path');
 const fs = require('fs');
@@ -20,8 +18,4 @@ app.get('/nodejs/listFile', function (req, res) {
   });
 });
 
-if (typeof(PhusionPassenger) !== 'undefined') {
-    app.listen('passenger');
-} else {
-    app.listen(3000);
-}
+app.listen(3003);

@@ -1,18 +1,22 @@
 const express = require('express');
 const app = express();
 
-require('dotenv').config();
-
 const mysql = require('mysql');
 
 function makeConnection(){
   return mysql.createConnection({
-    host     : process.env.DB_HOST,
-    user     : process.env.DB_USER,
-    password : process.env.DB_PASS,
-    database : process.env.DB_NAME
+    host     : 'localhost',
+    user     : 'paulluxwaffl_downloads',
+    password : 'elPolo37.db',
+    database : 'paulluxwaffl_downloads',
   });
 }
+
+app.use( (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "http://62.210.53.84");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Request-With, Content-Type, Accept, Authorization");
+  next();
+});
 
 app.get('/nodejs/gettotal', async function(req, res) {
   getTotal(req, res);

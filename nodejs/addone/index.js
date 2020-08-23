@@ -1,16 +1,14 @@
 const express = require('express');
 const app = express();
 
-require('dotenv').config();
-
 const mysql = require('mysql');
 
 function makeConnection(){
   return mysql.createConnection({
-    host     : process.env.DB_HOST,
-    user     : process.env.DB_USER,
-    password : process.env.DB_PASS,
-    database : process.env.DB_NAME
+    host     : 'localhost',
+    user     : 'paulluxwaffl_downloads',
+    password : 'elPolo37.db',
+    database : 'paulluxwaffl_downloads',
   });
 }
 
@@ -23,7 +21,7 @@ async function addOne(req, res){
   var send = {}
   connection.query('insert into downloads (dateTime) values (NOW());', function (error, results, fields) {
     if (error){
-      send = {status: 'error'};
+      send = {status: error};
     }else{
       send = {status: 'ok'}
     }

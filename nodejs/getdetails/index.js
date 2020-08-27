@@ -1,7 +1,3 @@
-if (typeof(PhusionPassenger) !== 'undefined') {
-    PhusionPassenger.configure({ autoInstall: false });
-}
-
 const express = require('express');
 const app = express();
 
@@ -9,12 +5,19 @@ const mysql = require('mysql');
 
 function makeConnection(){
   return mysql.createConnection({
-    host     : process.env.DB_HOST,
-    user     : process.env.DB_USER,
-    password : process.env.DB_PASS,
-    database : process.env.DB_NAME
+    host     : 'localhost',
+    user     : 'paulluxwaffl_downloads',
+    password : 'elPolo37.db',
+    database : 'paulluxwaffl_downloads',
   });
 }
+
+app.use( (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Request-With, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Credentials", 'true');
+  next();
+});
 
 app.get('/nodejs/getdetails', async function(req, res) {
   getDetails(req, res);
@@ -49,8 +52,4 @@ async function getDetails(req, res){
   connection.end();
 }
 
-if (typeof(PhusionPassenger) !== 'undefined') {
-    app.listen('passenger');
-} else {
-    app.listen(3000);
-}
+app.listen(3001, 'localhost');

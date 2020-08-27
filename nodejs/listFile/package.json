@@ -10,10 +10,12 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "*",
-    "path": "^0.12.7",
+    "directory-tree": "*",
+    "dotenv": "^8.2.0",
+    "dotenv-extended": "^2.4.0",
+    "express": "^4.17.1",
     "fs": "^0.0.1-security",
-    "directory-tree": "*"
+    "path": "*"
   },
   "engines": {
     "node": "10.20.1"

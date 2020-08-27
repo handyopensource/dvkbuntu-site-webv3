@@ -20,7 +20,7 @@ if (!Date.prototype.toISODate) {
 
 function Compteur() {
   var nbWeek;
-  var NbWeekURL = `https://dvkbuntu.org/nodejs/gettotal?startdate=${dateSeptJour()}&enddate=${dateAujourdui()}`;
+  var NbWeekURL = `https://www.dvkbuntu.org/nodejs/gettotal/?startdate=${dateSeptJour()}&enddate=${dateAujourdui()}`;
   var nbWeekDV;
   var NbWeekDVURL = `https://sourceforge.net/projects/dvkbuntu/files/stats/json?start_date=${dateSeptJour()}&end_date=${dateAujourdui()}`;
   var nbWeekDVL;
@@ -55,7 +55,7 @@ function Compteur() {
   .catch(err => { throw err });
 
   var nbTotal;
-  var nbTotalURL = `https://dvkbuntu.org/nodejs/gettotal?startdate=2010-01-01&enddate=${dateAujourdui()}`;
+  var nbTotalURL = `https://www.dvkbuntu.org/nodejs/gettotal/?startdate=2010-01-01&enddate=${dateAujourdui()}`;
   var nbTotalDV;
   var nbTotalDVURL = `https://sourceforge.net/projects/dvkbuntu/files/stats/json?start_date=2010-01-01&end_date=${dateAujourdui()}`;
   var nbTotalDVL;

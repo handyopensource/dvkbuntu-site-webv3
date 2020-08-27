@@ -13,12 +13,14 @@ function makeConnection(){
 }
 
 app.use( (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://62.210.53.84");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Request-With, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Credentials", 'true');
   next();
 });
 
 app.get('/nodejs/gettotal', async function(req, res) {
+  console.log(req);
   getTotal(req, res);
 });
 
@@ -51,4 +53,4 @@ async function getTotal(req, res){
   connection.end();
 }
 
-app.listen(3002);
+app.listen(3002, 'localhost');

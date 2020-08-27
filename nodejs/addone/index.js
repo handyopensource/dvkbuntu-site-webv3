@@ -12,6 +12,13 @@ function makeConnection(){
   });
 }
 
+app.use( (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Request-With, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Credentials", 'true');
+  next();
+});
+
 app.get('/nodejs/addone', async function(req, res) {
     addOne(req, res);
 });
@@ -30,4 +37,4 @@ async function addOne(req, res){
   connection.end();
 }
 
-app.listen(3000);
+app.listen(3000, 'localhost');

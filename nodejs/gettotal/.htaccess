@@ -1,3 +1,0 @@
-Header set Access-Control-Allow-Origin 'http://62.210.53.84'
-# disable mod_rewrite
-RewriteEngine off

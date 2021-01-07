@@ -27,14 +27,17 @@
       <meta name="twitter:image" content="https://www.dvkbuntu.org/images/OpenGraphTwitterImage.png" />
       <meta name="twitter:image:alt" content="HOS + DVK Logo" />
       <link type="application/json+oembed" href="https://www.dvkbuntu.org/json/oembed.json" />
+      <!-- favicon -->
+      <link rel="icon" href="../images/DVKBuntu.gif" type="image/gif" />
+      <!--  Converse.js (logiciel communication) -->
+      <link rel="stylesheet" type="text/css" media="screen" href="https://www.dvkbuntu.org/dist/converse.min.css">
+      <script src="https://www.dvkbuntu.org/dist/converse.min.js" charset="utf-8"></script> 
       <!-- bootstrap css -->
       <link rel="stylesheet" href="../css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" id="linkcss" href="css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="../css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="../images/DVKBuntu.gif" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -95,7 +98,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 dl">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 dl" style="font-size: 14px;">
                     <a class="dlsf" id="linkToFollow" onClick="alertDiag('Si vous aimez notre projet, soutenez-nous dans la rubrique Donnation, merci !','https://www.dvkbuntu.org/#repere2');">
                        <img id="byweek" alt="Download DVKBuntu" src="" width="45%" style="cursor: pointer;"/>
                     </a>&nbsp;&nbsp;
@@ -327,4 +330,29 @@
         }
       </script>
    </body>
+   <script>
+    converse.initialize({
+        allow_logout: false,
+        allow_muc_invitations: false,
+        allow_contact_requests: false,
+        bosh_service_url: 'https://chat.dvkbuntu.org/http-bind/',
+        authentication: 'login',
+        keepalive: true,
+        auto_login: true,
+        jid: 'site-web@chat.dvkbuntu.org',
+        password: 'The-Site-Web',
+        auto_join_rooms: [
+          'aide-et-infos@conference.chat.dvkbuntu.org',
+        ],
+        notify_all_room_messages: [
+          'aide-et-infos@conference.chat.dvkbuntu.org',
+        ],
+        hide_muc_server: true,
+        play_sounds: true,
+        singleton: true,
+        auto_reconnect: true,
+        show_controlbox_by_default: true,
+        strict_plugin_dependencies: false,
+    });
+    </script>
 </html>

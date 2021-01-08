@@ -354,5 +354,9 @@
         show_controlbox_by_default: true,
         strict_plugin_dependencies: false,
     });
+    converse.listen.on('chatRoomOpened', function (event, chatbox) {
+      console.log("chat room opened ");
+      chatbox.minimize();
+    });
     </script>
 </html>

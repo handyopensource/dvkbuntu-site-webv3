@@ -768,6 +768,7 @@
         password: 'The-Site-Web',
         auto_join_rooms: [
           'aide-et-infos@conference.chat.dvkbuntu.org',
+          'minimized': true
         ],
         notify_all_room_messages: [
           'aide-et-infos@conference.chat.dvkbuntu.org',
@@ -778,10 +779,6 @@
         auto_reconnect: true,
         show_controlbox_by_default: true,
         strict_plugin_dependencies: false,
-    });
-    converse.listen.on('chatRoomOpened', function (event, chatbox) {
-      console.log("chat room opened ");
-      chatbox.minimize();
     });
     </script>
 </html>

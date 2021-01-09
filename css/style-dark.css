@@ -42,8 +42,8 @@ body {
 }
 
 .converse-container {
-    height: 50vh;
-    width: 55vh;
+    height: 70vh;
+    width: 75vh;
     position: fixed;
     bottom: 80px;
     right: 10px;
@@ -52,18 +52,22 @@ body {
 }
 .chatRoomBoxEm > .converse-container,
 .chatRoomBoxEm > .converse-container > #conversejs {
-    width: 55vh;
+    width: 75vh;
 }
 
 .chatRoomBoxEm > button {
     width: auto;
 }
 
+#quote {
+    max-width: 30%;
+}
+
 #conversejs.converse-embedded *,
 #conversejs.converse-embedded :after,
 #conversejs.converse-embedded :before {
     width: auto;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .dropleft {

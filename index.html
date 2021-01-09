@@ -58,7 +58,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout" onload="Compteur(); checkCookie(); Compteur();">
+   <body class="main-layout" onload="Compteur(); checkCookie(); Compteur(); Aides();">
       <!-- loader  -->
       <style>
         .loader_bg {
@@ -75,9 +75,17 @@
             right: 0;
             overflow: hidden;
          }
-
          .loader_bg img {
             width: 280px;
+         }
+         .converse-container {
+             height: 50vh;
+             width: 55vh;
+             position: fixed;
+             bottom: 50px;
+             right: 10px;
+             border: 5px solid red;
+             border-radius: 5px;
          }
       </style>
       <div class="loader_bg">
@@ -301,7 +309,8 @@
                </div>
                <div class="carousel-item">
                   <div class="container-fluid">
-                     <div class="carousel-caption">
+                     <div class="carousel
+         .m-caption">
                         <div class="row">
                            <div class="col-md-6">
                              <div class="text-bg">
@@ -723,6 +732,10 @@
        </div>
        <div style="height: 40px;"><div class="col-md-12">
        </div>
+       <div class="converse-container" id="chatToggle">
+           <div id="conversejs"></div>
+       </div>
+       <button type="button" onclick="Aides()" class="btn btn-primary btn-lg" style="font-size: 25px; position:fixed; bottom: 10px; right:10px; background-color:#00296b; border: 5px solid red; border-radius: 5px;">Besoin d'aides</button>
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
@@ -733,7 +746,7 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <script src="js/changePos.js"></script>
+      <script s<button onclick="myFunction()">Click Me</button>rc="js/changePos.js"></script>
       <script src="js/alertDiag.js"></script>
       <script src="js/changeStyle.js"></script>
       <script src="js/invisible.js"></script>
@@ -754,6 +767,16 @@
 
          });
       </script>
+      <script>
+        function Aides() {
+          var x = document.getElementById("chatToggle");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
    </body>
    <script>
     converse.initialize({
@@ -768,17 +791,17 @@
         password: 'The-Site-Web',
         auto_join_rooms: [
           'aide-et-infos@conference.chat.dvkbuntu.org',
-          'minimized': true
         ],
         notify_all_room_messages: [
           'aide-et-infos@conference.chat.dvkbuntu.org',
         ],
         hide_muc_server: true,
         play_sounds: true,
-        singleton: false,
+        singleton: true,
         auto_reconnect: true,
-        show_controlbox_by_default: false,
+        show_controlbox_by_default: true,
         strict_plugin_dependencies: false,
+        view_mode: 'embedded',
     });
     </script>
 </html>

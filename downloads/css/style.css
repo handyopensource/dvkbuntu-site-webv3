@@ -33,6 +33,22 @@
      box-sizing: border-box !important;
 }
 
+.converse-container {
+    height: 50vh;
+    width: 55vh;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    border: 5px solid red;
+    border-radius: 5px;
+    width: 50;
+}
+
+.dropleft {
+    display: none;
+    opacity: 0;
+}
+
 body {
      color: #666666;
      font-size: 0px;

@@ -78,15 +78,6 @@
          .loader_bg img {
             width: 280px;
          }
-         .converse-container {
-             height: 50vh;
-             width: 55vh;
-             position: fixed;
-             bottom: 50px;
-             right: 10px;
-             border: 5px solid red;
-             border-radius: 5px;
-         }
       </style>
       <div class="loader_bg">
          <img src="images/loading.gif" alt="#" />
@@ -732,10 +723,12 @@
        </div>
        <div style="height: 40px;"><div class="col-md-12">
        </div>
-       <div class="converse-container" id="chatToggle">
-           <div id="conversejs"></div>
-       </div>
-       <button type="button" onclick="Aides()" class="btn btn-primary btn-lg" style="font-size: 25px; position:fixed; bottom: 10px; right:10px; background-color:#00296b; border: 5px solid red; border-radius: 5px;">Besoin d'aides</button>
+       <div class="chatRoomBoxEm">
+         <div class="converse-container" id="chatToggle">
+            <div id="conversejs"></div>
+         </div>
+         <button type="button" onclick="Aides()" class="btn btn-primary btn-lg" style="font-size: 25px; position:fixed; bottom: 40px; right:10px; background-color:#00296b; border: 5px solid red; border-radius: 5px;">Besoin d'aides</button>
+      </div>
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
